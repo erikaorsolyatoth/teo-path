@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to the Family Pathways Coach"/>
+    <h1>{{ $t('welcome') }}</h1>
+    <HelloWorld/>
+<!--    <HelloWorld msg="Welcome to the Family Pathways Coach"/>-->
   </div>
 </template>
 
