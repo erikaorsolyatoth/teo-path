@@ -1,4 +1,28 @@
+<script lang="ts">
+import { defineComponent } from 'vue';
+import { useI18n } from 'vue-i18n';
+import CalendlyPopup from "./components/CalendlyPopup.vue";
+
+export default defineComponent({
+  setup() {
+    const { t, locale } = useI18n();
+
+    const changeLanguage = (lang: string) => {
+      locale.value = lang;
+    };
+
+    return { t, changeLanguage };
+  },
+  components: {
+    CalendlyPopup,
+  }
+});
+</script>
+
 <template>
+  <button @click="changeLanguage('en')">English</button>
+  <button @click="changeLanguage('hu')">Magyar</button>
+  <CalendlyPopup/>
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
