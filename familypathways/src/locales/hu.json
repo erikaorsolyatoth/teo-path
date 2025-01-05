@@ -1,6 +1,27 @@
 {
-  "welcome": "Üdvözlünk a család fejlesztő oldalán!",
-  "about": "Ez egy Rólunk oldal",
-  "book": "Foglalj időpontot",
-  "calendlyLink": "https://calendly.com/parentpathway-proton/consultation-clone"
+  "calendlyLink": "https://calendly.com/era-teopath/30min",
+  "language": "Nyelv",
+  "booking": "Időpontfoglalás",
+
+  "welcome": "Üdvözlünk a Teo Path család fejlesztő oldalán!",
+
+  "about": "Rólam",
+  "aboutMe": "Pár szóban rólam",
+  "aboutMeText": "Róéam oldal",
+  "studies": "Tanulmányaim",
+  "studiesText": "Tanulmányaim oldal",
+  "experiences": "Tapasztalataim",
+  "experiencesText": "Tapasztalataim oldal",
+
+  "issues": "Előforduló problémák",
+  "issuesText": "Problémák oldal",
+
+  "newsEvents": "Hírek, események",
+  "newsEventsText": "Hírek, események oldal",
+
+  "services": "Szolgáltatások",
+  "servicesText": "Szolgáltatások oldal",
+
+  "contacts": "Elérhetőségek",
+  "contactsText": "Elérhetőségek oldal"
 }

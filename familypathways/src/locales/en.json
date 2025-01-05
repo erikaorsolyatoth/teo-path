@@ -1,6 +1,27 @@
 {
-  "welcome": "Welcome to the Family Pathways Coach",
-  "about": "This is an about page",
-  "book": "Book an appointment",
-  "calendlyLink": "https://calendly.com/parentpathway-proton/consultation"
+  "calendlyLink": "https://calendly.com/era-teopath/30min",
+  "language": "Language",
+  "booking": "Book an appointment",
+
+  "welcome": "Welcome to Teo Path Coaching",
+
+  "about": "About me",
+  "aboutMe": "About me",
+  "aboutMeText": "About me page",
+  "studies": "My studies",
+  "studiesText": "Studies page",
+  "experiences": "My experiences",
+  "experiencesText": "Experiences page",
+
+  "issues": "When to call me",
+  "issuesText": "Issues page",
+
+  "newsEvents": "News, events",
+  "newsEventsText": "News, events page",
+
+  "services": "Services",
+  "servicesText": "Services page",
+
+  "contacts": "Contacts",
+  "contactsText": "Contacts page"
 }
