@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkteo_path"]=self["webpackChunkteo_path"]||[]).push([[633],{5542:function(n,t,e){e.r(t),e.d(t,{default:function(){return f}});var u=e(6768),r=e(4232);function a(n,t){return(0,u.uX)(),(0,u.CE)("div",null,[(0,u.Lk)("h1",null,(0,r.v_)(n.$t("newsEventsText")),1)])}var s=e(1241);const c={},l=(0,s.A)(c,[["render",a]]);var f=l}}]);
+//# sourceMappingURL=newsEvents.e01ffa08.js.map

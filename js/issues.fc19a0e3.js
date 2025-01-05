@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkfamilypathways"]=self["webpackChunkfamilypathways"]||[]).push([[851],{6149:function(n,u,t){t.r(u),t.d(u,{default:function(){return i}});var a=t(6768),e=t(4232);function r(n,u){return(0,a.uX)(),(0,a.CE)("div",null,[(0,a.Lk)("h1",null,(0,e.v_)(n.$t("issuesText")),1)])}var s=t(1241);const l={},f=(0,s.A)(l,[["render",r]]);var i=f}}]);
-//# sourceMappingURL=issues.fc19a0e3.js.map

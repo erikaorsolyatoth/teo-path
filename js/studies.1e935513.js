@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkfamilypathways"]=self["webpackChunkfamilypathways"]||[]).push([[538],{630:function(n,t,u){u.r(t),u.d(t,{default:function(){return i}});var a=u(6768),e=u(4232);function r(n,t){return(0,a.uX)(),(0,a.CE)("div",null,[(0,a.Lk)("h1",null,(0,e.v_)(n.$t("studiesText")),1)])}var s=u(1241);const l={},f=(0,s.A)(l,[["render",r]]);var i=f}}]);
-//# sourceMappingURL=studies.1e935513.js.map

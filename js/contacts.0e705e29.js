@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkfamilypathways"]=self["webpackChunkfamilypathways"]||[]).push([[912],{660:function(n,t,a){a.r(t),a.d(t,{default:function(){return f}});var u=a(6768),e=a(4232);function r(n,t){return(0,u.uX)(),(0,u.CE)("div",null,[(0,u.Lk)("h1",null,(0,e.v_)(n.$t("contactsText")),1)])}var c=a(1241);const l={},s=(0,c.A)(l,[["render",r]]);var f=s}}]);
-//# sourceMappingURL=contacts.0e705e29.js.map

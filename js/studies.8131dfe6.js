@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkteo_path"]=self["webpackChunkteo_path"]||[]).push([[538],{630:function(t,e,n){n.r(e),n.d(e,{default:function(){return f}});var u=n(6768),r=n(4232);function a(t,e){return(0,u.uX)(),(0,u.CE)("div",null,[(0,u.Lk)("h1",null,(0,r.v_)(t.$t("studiesText")),1)])}var s=n(1241);const c={},l=(0,s.A)(c,[["render",a]]);var f=l}}]);
+//# sourceMappingURL=studies.8131dfe6.js.map
