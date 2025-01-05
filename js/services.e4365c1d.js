@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkfamilypathways"]=self["webpackChunkfamilypathways"]||[]).push([[671],{1461:function(n,e,t){t.r(e),t.d(e,{default:function(){return f}});var u=t(6768),a=t(4232);function r(n,e){return(0,u.uX)(),(0,u.CE)("div",null,[(0,u.Lk)("h1",null,(0,a.v_)(n.$t("servicesText")),1)])}var s=t(1241);const l={},c=(0,s.A)(l,[["render",r]]);var f=c}}]);
+//# sourceMappingURL=services.e4365c1d.js.map

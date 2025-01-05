@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkfamilypathways"]=self["webpackChunkfamilypathways"]||[]).push([[860],{8724:function(n,t,u){u.r(t),u.d(t,{default:function(){return c}});var a=u(6768),e=u(4232);function r(n,t){return(0,a.uX)(),(0,a.CE)("div",null,[(0,a.Lk)("h1",null,(0,e.v_)(n.$t("aboutMeText")),1)])}var l=u(1241);const f={},s=(0,l.A)(f,[["render",r]]);var c=s}}]);
+//# sourceMappingURL=aboutMe.1f2fcfac.js.map

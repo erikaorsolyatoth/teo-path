@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkfamilypathways"]=self["webpackChunkfamilypathways"]||[]).push([[633],{5542:function(n,t,e){e.r(t),e.d(t,{default:function(){return c}});var u=e(6768),a=e(4232);function r(n,t){return(0,u.uX)(),(0,u.CE)("div",null,[(0,u.Lk)("h1",null,(0,a.v_)(n.$t("newsEventsText")),1)])}var s=e(1241);const l={},f=(0,s.A)(l,[["render",r]]);var c=f}}]);
+//# sourceMappingURL=newsEvents.c3b7fc9a.js.map
