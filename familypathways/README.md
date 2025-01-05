@@ -1,4 +1,4 @@
-# familypathways
+# teo-path
 
 ## Project setup
 ```
