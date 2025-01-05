@@ -22,17 +22,17 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd familypathways
+          cd teo-path
           npm install
 
       - name: Build project
         run: |
-          cd familypathways
+          cd teo-path
           npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./familypathways/dist
-          cname: www.pathwayhelp.com
+          publish_dir: ./teo-path/dist
+          cname: www.teopath.com
