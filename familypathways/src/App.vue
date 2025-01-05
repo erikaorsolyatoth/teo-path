@@ -1,33 +1,35 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { useI18n } from 'vue-i18n';
-import CalendlyPopup from "./components/CalendlyPopup.vue";
+import TeoPathNavBar from "@/components/TeoPathNavBar.vue";
 
 export default defineComponent({
   setup() {
-    const { t, locale } = useI18n();
+    const { locale } = useI18n();
 
     const changeLanguage = (lang: string) => {
       locale.value = lang;
     };
 
-    return { t, changeLanguage };
+    return { changeLanguage };
   },
   components: {
-    CalendlyPopup,
+    TeoPathNavBar,
   }
 });
+
 </script>
 
 <template>
-  <button @click="changeLanguage('en')">English</button>
-  <button @click="changeLanguage('hu')">Magyar</button>
-  <CalendlyPopup/>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+
+  <div>
+    <b-img :src="require('./assets/seating.jpg')" fluid-grow alt="People in a seating image"></b-img>
+  </div>
+
+  <TeoPathNavBar />
+
   <router-view/>
+
 </template>
 
 <style>
@@ -37,18 +39,5 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
