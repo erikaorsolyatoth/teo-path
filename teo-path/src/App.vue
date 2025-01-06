@@ -2,6 +2,8 @@
 import { defineComponent } from 'vue';
 import { useI18n } from 'vue-i18n';
 import TeoPathNavBar from "@/components/TeoPathNavBar.vue";
+import LogoImageBackground from "@/components/LogoImageBackground.vue";
+import ScrollToTopArrow from "@/components/ScrollToTopArrow.vue";
 
 export default defineComponent({
   setup() {
@@ -14,6 +16,8 @@ export default defineComponent({
     return { changeLanguage };
   },
   components: {
+    ScrollToTopArrow,
+    LogoImageBackground,
     TeoPathNavBar,
   }
 });
@@ -22,13 +26,58 @@ export default defineComponent({
 
 <template>
 
+  <TeoPathNavBar />
+
   <div>
     <b-img :src="require('./assets/logo-image-background.jpg')" fluid-grow alt="People in a seating image"></b-img>
   </div>
 
-  <TeoPathNavBar />
+  <section id="aboutMe">
+    <div>
+      <h1>{{ $t('aboutMeText') }}</h1>
+      <LogoImageBackground/>
+    </div>
+  </section>
+  <section id="experiences">
+    <div>
+      <h1>{{ $t('experiencesText') }}</h1>
+      <LogoImageBackground/>
+    </div>
+  </section>
+  <section id="studies">
+    <div>
+      <h1>{{ $t('studiesText') }}</h1>
+      <LogoImageBackground/>
+    </div>
+  </section>
+  <section id="issues">
+    <div>
+      <h1>{{ $t('issuesText') }}</h1>
+      <LogoImageBackground/>
+    </div>
+  </section>
+  <section id="newsEvents">
+    <div>
+      <h1>{{ $t('newsEventsText') }}</h1>
+      <LogoImageBackground/>
+    </div>
+  </section>
+  <section id="services">
+    <div>
+      <h1>{{ $t('servicesText') }}</h1>
+      <LogoImageBackground/>
+    </div>
+  </section>
+  <section id="contacts">
+    <div>
+      <h1>{{ $t('contactsText') }}</h1>
+      <LogoImageBackground/>
+    </div>
+  </section>
 
-  <router-view/>
+<!--  <router-view/>-->
+
+  <ScrollToTopArrow/>
 
 </template>
 
