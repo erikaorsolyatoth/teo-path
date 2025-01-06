@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkteo_path"]=self["webpackChunkteo_path"]||[]).push([[671],{1461:function(e,t,n){n.r(t),n.d(t,{default:function(){return f}});var u=n(6768),r=n(4232);function a(e,t){return(0,u.uX)(),(0,u.CE)("div",null,[(0,u.Lk)("h1",null,(0,r.v_)(e.$t("servicesText")),1)])}var c=n(1241);const s={},l=(0,c.A)(s,[["render",a]]);var f=l}}]);
-//# sourceMappingURL=services.acbbbbdd.js.map
