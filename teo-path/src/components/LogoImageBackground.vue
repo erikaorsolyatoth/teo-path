@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-img :src="require('/src/assets/logo-image-background.jpg')" fluid-grow alt="People in a seating image"></b-img>
+    <b-img :src="require('/src/assets/seating.jpg')" fluid-grow alt="People in a seating image"></b-img>
   </div>
 </template>
 
