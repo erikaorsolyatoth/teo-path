@@ -23,7 +23,7 @@ export default defineComponent({
 <template>
 
   <div>
-    <b-img :src="require('./assets/seating.jpg')" fluid-grow alt="People in a seating image"></b-img>
+    <b-img :src="require('./assets/logo-image-background.jpg')" fluid-grow alt="People in a seating image"></b-img>
   </div>
 
   <TeoPathNavBar />
