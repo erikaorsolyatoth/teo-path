@@ -1,29 +1,57 @@
 <template>
-  <BNavbar toggleable="lg" type="dark" variant="primary" class="px-4">
+  <BNavbar toggleable="lg" type="dark" variant="primary" class="px-4 sticky-top" >
     <BNavbarBrand href="#">Teo Path</BNavbarBrand>
 
     <BNavbarToggle target="nav-collapse" />
 
     <BCollapse id="nav-collapse" isNav>
-      <BNavbarNav>
-        <BDropdown :text="t('about')" variant="primary" class="mx-2">
-          <BDropdownItem to="/about/aboutMe">{{ t('aboutMe') }}</BDropdownItem>
-          <BDropdownItem to="/about/studies">{{ t('studies') }}</BDropdownItem>
-          <BDropdownItem to="/about/experiences">{{ t('experiences') }}</BDropdownItem>
-        </BDropdown>
 
-        <BNavItem to="/issues" class="mx-2">
-          {{ t('issues') }}
-        </BNavItem>
+        <BNavbarNav>
+          <!-- 1. Legördülő menü 'About' -->
+          <BDropdown :text="t('about')" variant="primary" class="mx-2">
+            <!-- Az anchor helyett:to -->
+            <BDropdownItem :to="{ path: '/', hash: '#aboutMe' }">
+              {{ t('aboutMe') }}
+            </BDropdownItem>
+            <BDropdownItem :to="{ path: '/', hash: '#studies' }">
+              {{ t('studies') }}
+            </BDropdownItem>
+            <BDropdownItem :to="{ path: '/', hash: '#experiences' }">
+              {{ t('experiences') }}
+            </BDropdownItem>
+          </BDropdown>
 
-        <BNavItem to="/services" class="mx-2">
-          {{ t('services') }}
-        </BNavItem>
+          <!-- 2. Egyszerű menüpontok router-hash módon -->
+          <BNavItem :to="{ path: '/', hash: '#issues' }" class="mx-2">
+            {{ t('issues') }}
+          </BNavItem>
+          <BNavItem :to="{ path: '/', hash: '#services' }" class="mx-2">
+            {{ t('services') }}
+          </BNavItem>
+          <BNavItem :to="{ path: '/', hash: '#contacts' }" class="mx-2">
+            {{ t('contacts') }}
+          </BNavItem>
+        </BNavbarNav>
 
-        <BNavItem to="/contacts" class="mx-2">
-          {{ t('contacts') }}
-        </BNavItem>
-      </BNavbarNav>
+<!--      <BNavbarNav>-->
+<!--        <BDropdown :text="t('about')" variant="primary" class="mx-2">-->
+<!--          <BDropdownItem to="/about/aboutMe">{{ t('aboutMe') }}</BDropdownItem>-->
+<!--          <BDropdownItem to="/about/studies">{{ t('studies') }}</BDropdownItem>-->
+<!--          <BDropdownItem to="/about/experiences">{{ t('experiences') }}</BDropdownItem>-->
+<!--        </BDropdown>-->
+
+<!--        <BNavItem to="/issues" class="mx-2">-->
+<!--          {{ t('issues') }}-->
+<!--        </BNavItem>-->
+
+<!--        <BNavItem to="/services" class="mx-2">-->
+<!--          {{ t('services') }}-->
+<!--        </BNavItem>-->
+
+<!--        <BNavItem to="/contacts" class="mx-2">-->
+<!--          {{ t('contacts') }}-->
+<!--        </BNavItem>-->
+<!--      </BNavbarNav>-->
 
       <BNavbarNav class="ms-auto">
         <BNavItem>
@@ -38,6 +66,7 @@
         </BDropdown>
 
       </BNavbarNav>
+
     </BCollapse>
   </BNavbar>
 </template>
