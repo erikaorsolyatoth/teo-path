@@ -1,27 +1,71 @@
 {
-  "calendlyLink": "https://calendly.com/era-teopath/30min",
-  "language": "Language",
-  "booking": "Book an appointment",
+  "navBar": {
+    "calendlyLink": "https://calendly.com/era-teopath/30min",
+    "language": "Language",
+    "booking": "Book an appointment"
+  },
 
   "welcome": "Welcome to Teo Path Coaching",
 
   "about": "About me",
-  "aboutMe": "About me",
-  "aboutMeText": "About me page",
-  "studies": "My studies",
-  "studiesText": "Studies page",
-  "experiences": "My experiences",
-  "experiencesText": "Experiences page",
+  "sectionAboutMe": {
+    "aboutMe": "About me",
+    "aboutMeText": "About me page"
+  },
+  "sectionStudies": {
+    "studies": "My studies",
+    "studiesText": "Studies page"
+  },
+  "sectionExperiences": {
+    "experiences": "My experiences",
+    "experiencesText": "Experiences page"
+  },
 
-  "issues": "When to call me",
-  "issuesText": "Issues page",
+  "sectionIssues": {
+    "issues": "When to call me",
+    "issuesText": "Issues page"
+  },
 
-  "newsEvents": "News, events",
-  "newsEventsText": "News, events page",
+  "sectionServices": {
+    "services": "My services",
+    "servicesTitle": "My services - Psychological and family counseling",
+    "servicesDescription": "desc...:",
+    "service1Title": "",
+    "service1Description1": "",
+    "service1Description2": "",
+    "service2Title": "",
+    "service2Description1": "",
+    "service2Description2": "",
+    "service2Description3": "",
+    "service3Title": "",
+    "service3Description1": "",
+    "service3Description2": "",
+    "service3Description3": "",
+    "service4Title": "",
+    "service4Description1": "",
+    "service4Description2": "",
+    "service4Description3": "",
+    "service4Description4": "",
+    "service4Description41": "",
+    "service4Description42": "",
+    "service5Title": "",
+    "service5Description1": "",
+    "service5Description2": "",
+    "service6Title": "",
+    "service6Description1": "",
+    "service7Description2": ""
 
-  "services": "Services",
-  "servicesText": "Services page",
+  },
 
-  "contacts": "Contacts",
-  "contactsText": "Contacts page"
+  "sectionNewsEvents": {
+    "newsEvents": "News, events",
+    "newsEventsText": "News, events page"
+  },
+
+  "sectionContacts": {
+    "contacts": "Contacts",
+    "contactsTitle": "Contacts",
+    "contactsDescription": "",
+    "contactsText": ""
+  }
 }
