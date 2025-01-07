@@ -29,7 +29,7 @@ export default defineComponent({
   },
   methods: {
     openCalendlyPopup() {
-      const baseCalendlyUrl = this.t("calendlyLink");
+      const baseCalendlyUrl = this.t("navBar.calendlyLink");
 
       // Dinamikus URL paraméterekkel
       const url = `${baseCalendlyUrl}?name=${encodeURIComponent(

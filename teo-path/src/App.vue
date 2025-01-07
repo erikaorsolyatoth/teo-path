@@ -2,8 +2,14 @@
 import { defineComponent } from 'vue';
 import { useI18n } from 'vue-i18n';
 import TeoPathNavBar from "@/components/TeoPathNavBar.vue";
-import LogoImageBackground from "@/components/LogoImageBackground.vue";
 import ScrollToTopArrow from "@/components/ScrollToTopArrow.vue";
+import AboutMeView from "@/views/about/AboutMeView.vue";
+import ExperiencesView from "@/views/about/ExperiencesView.vue";
+import StudiesView from "@/views/about/StudiesView.vue";
+import IssuesView from "@/views/IssuesView.vue";
+import NewsEventsView from "@/views/NewsEventsView.vue";
+import ServicesView from "@/views/ServicesView.vue";
+import ContactsView from "@/views/ContactsView.vue";
 
 export default defineComponent({
   setup() {
@@ -16,8 +22,14 @@ export default defineComponent({
     return { changeLanguage };
   },
   components: {
+    ContactsView,
+    ServicesView,
+    NewsEventsView,
+    IssuesView,
+    StudiesView,
+    ExperiencesView,
+    AboutMeView,
     ScrollToTopArrow,
-    LogoImageBackground,
     TeoPathNavBar,
   }
 });
@@ -29,53 +41,30 @@ export default defineComponent({
   <TeoPathNavBar />
 
   <div>
-    <b-img :src="require('./assets/logo-image-background.jpg')" fluid-grow alt="People in a seating image"></b-img>
+    <b-img :src="require('./assets/logo-image-background.jpg')" fluid alt="People in a seating image"></b-img>
   </div>
 
   <section id="aboutMe">
-    <div>
-      <h1>{{ $t('aboutMeText') }}</h1>
-      <LogoImageBackground/>
-    </div>
-  </section>
-  <section id="experiences">
-    <div>
-      <h1>{{ $t('experiencesText') }}</h1>
-      <LogoImageBackground/>
-    </div>
+    <AboutMeView/>
   </section>
   <section id="studies">
-    <div>
-      <h1>{{ $t('studiesText') }}</h1>
-      <LogoImageBackground/>
-    </div>
+    <StudiesView/>
+  </section>
+  <section id="experiences">
+    <ExperiencesView/>
   </section>
   <section id="issues">
-    <div>
-      <h1>{{ $t('issuesText') }}</h1>
-      <LogoImageBackground/>
-    </div>
-  </section>
-  <section id="newsEvents">
-    <div>
-      <h1>{{ $t('newsEventsText') }}</h1>
-      <LogoImageBackground/>
-    </div>
+    <IssuesView/>
   </section>
   <section id="services">
-    <div>
-      <h1>{{ $t('servicesText') }}</h1>
-      <LogoImageBackground/>
-    </div>
+    <ServicesView/>
+  </section>
+  <section id="newsEvents">
+    <NewsEventsView/>
   </section>
   <section id="contacts">
-    <div>
-      <h1>{{ $t('contactsText') }}</h1>
-      <LogoImageBackground/>
-    </div>
+    <ContactsView/>
   </section>
-
-<!--  <router-view/>-->
 
   <ScrollToTopArrow/>
 
@@ -88,5 +77,13 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.section-padding {
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  text-align: left;
 }
 </style>
