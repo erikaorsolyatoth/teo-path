@@ -1,27 +1,70 @@
 {
-  "calendlyLink": "https://calendly.com/era-teopath/30min",
-  "language": "Nyelv",
-  "booking": "Időpontfoglalás",
+  "navBar": {
+    "calendlyLink": "https://calendly.com/era-teopath/30min",
+    "language": "Nyelv",
+    "booking": "Időpontfoglalás"
+  },
 
   "welcome": "Üdvözlünk a Teo Path család fejlesztő oldalán!",
 
   "about": "Rólam",
-  "aboutMe": "Pár szóban rólam",
-  "aboutMeText": "Rólam oldal",
-  "studies": "Tanulmányaim",
-  "studiesText": "Tanulmányaim oldal",
-  "experiences": "Tapasztalataim",
-  "experiencesText": "Tapasztalataim oldal",
+  "sectionAboutMe": {
+    "aboutMe": "Pár szóban rólam",
+    "aboutMeText": "Rólam oldal"
+  },
+  "sectionStudies": {
+    "studies": "Tanulmányaim",
+    "studiesText": "Tanulmányaim oldal"
+  },
+  "sectionExperiences": {
+    "experiences": "Tapasztalataim",
+    "experiencesText": "Tapasztalataim oldal"
+  },
 
-  "issues": "Előforduló problémák",
-  "issuesText": "Problémák oldal",
+  "sectionIssues": {
+    "issues": "Előforduló problémák",
+    "issuesText": "Problémák oldal"
+  },
 
-  "newsEvents": "Hírek, események",
-  "newsEventsText": "Hírek, események oldal",
+  "sectionServices": {
+    "services": "Szolgáltatásaim",
+    "servicesTitle": "Szolgáltatásaim – Pszichológiai és családi tanácsadás",
+    "servicesDescription": "Pszichológusként és családi tanácsadóként átfogó támogatást nyújtok különböző életszakaszok és helyzetek kihívásainak kezelésében. Szolgáltatásaimat az alábbi területeken kínálom, kronológiai sorrendben:",
+    "service1Title": "Párkapcsolati és családtervezési tanácsadás",
+    "service1Description1": "Kezdetleges párkapcsolati problémák kezelése: Segítség a kommunikáció, konfliktuskezelés és az érzelmi kapcsolatok megerősítésében.",
+    "service1Description2": "Családtervezés: Felkészülés a családalapításra, érzelmi és gyakorlati szempontok figyelembevételével.",
+    "service2Title": "Új családtag érkezése",
+    "service2Description1": "Új családtag várása: A várandósság érzelmi, szociális és gyakorlati kihívásainak kezelése.",
+    "service2Description2": "Magzat fejlődése: Tájékoztatás és lelki támogatás a szülők számára a magzati fejlődés időszakában.",
+    "service2Description3": "Szülővé válásra való felkészülés: Felkészítés a szülői szerepre, önismeret fejlesztése és a szülői felelősségek áttekintése.",
+    "service3Title": "Szülés utáni időszak",
+    "service3Description1": "Szülés utáni depresszió kezelése: Érzelmi támogatás és terápiás megoldások a szülés utáni hangulatingadozások enyhítésére.",
+    "service3Description2": "Csecsemőgondozási tanácsadás: Segítség a baba fizikai és érzelmi szükségleteinek megértésében és kezelésében.",
+    "service3Description3": "Kötődés kezelése: A biztonságos szülő-gyermek kapcsolat kialakítása, a kötődési problémák felismerése és megoldása.",
+    "service4Title": "Gyermekkor és fejlődés",
+    "service4Description1": "Fejlődés nyomon követése: A gyermek testi, érzelmi és szociális fejlődésének figyelemmel kísérése és támogatása.",
+    "service4Description2": "Újszülöttkörüli konfliktusok kezelése: Segítség az új helyzetekből fakadó szülői konfliktusok megoldásában.",
+    "service4Description3": "Nevelési konfliktusok kezelése: A szülő-gyermek kapcsolat harmonizálása, hatékony nevelési stratégiák kialakítása.",
+    "service4Description4": "Életkori specifikus problémák kezelése",
+    "service4Description41": "Dackorszak: Türelmet és határokat igénylő helyzetek megértése és kezelése.",
+    "service4Description42": "Prepubertás és kiskamasz kor: A gyermek érzelmi és szociális változásainak támogatása.",
+    "service5Title": "Serdülőkor és fiatal felnőttkor",
+    "service5Description1": "Pubertás és kamaszkor: Az identitás kialakulásának támogatása, kapcsolati problémák kezelése.",
+    "service5Description2": "Fiatal felnőttkor: Döntéshozatal, karriertervezés és önálló életkezdés érzelmi támogatása.",
+    "service6Title": "Felnőttkor és időskor",
+    "service6Description1": "Utolsó stádiumban lévő betegségekkel való szembenézés: Érzelmi és pszichológiai támogatás a nehéz helyzetek kezeléséhez.",
+    "service7Description2": "Gyászfeldolgozás: Segítség a veszteség feldolgozásában, az új életszakasz elfogadásában."
+  },
 
-  "services": "Szolgáltatások",
-  "servicesText": "Szolgáltatások oldal",
+  "sectionNewsEvents": {
+    "newsEvents": "Hírek, események",
+    "newsEventsText": "Hírek, események oldal"
+  },
 
-  "contacts": "Elérhetőségek",
-  "contactsText": "Elérhetőségek oldal"
+  "sectionContacts": {
+    "contacts": "Kapcsolat",
+    "contactsTitle": "Kapcsolat",
+    "contactsDescription": "Ha úgy érzi, segítségre van szüksége a fent említett témák valamelyikében, forduljon hozzám bizalommal! Egyéni és családi konzultációkkal állok rendelkezésére.",
+    "contactsText": "Elérhetőségeim:"
+  }
 }

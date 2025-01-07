@@ -6,65 +6,44 @@
 
     <BCollapse id="nav-collapse" isNav>
 
-        <BNavbarNav>
-          <!-- 1. Legördülő menü 'About' -->
-          <BDropdown :text="t('about')" variant="primary" class="mx-2">
-            <!-- Az anchor helyett:to -->
-            <BDropdownItem :to="{ path: '/', hash: '#aboutMe' }">
-              {{ t('aboutMe') }}
-            </BDropdownItem>
-            <BDropdownItem :to="{ path: '/', hash: '#studies' }">
-              {{ t('studies') }}
-            </BDropdownItem>
-            <BDropdownItem :to="{ path: '/', hash: '#experiences' }">
-              {{ t('experiences') }}
-            </BDropdownItem>
-          </BDropdown>
+      <BNavbarNav>
+        <BDropdown :text="t('about')" variant="primary" class="mx-2">
+          <BDropdownItem :to="{ path: '/', hash: '#aboutMe' }">
+            {{ t('sectionAboutMe.aboutMe') }}
+          </BDropdownItem>
+          <BDropdownItem :to="{ path: '/', hash: '#studies' }">
+            {{ t('sectionStudies.studies') }}
+          </BDropdownItem>
+          <BDropdownItem :to="{ path: '/', hash: '#experiences' }">
+            {{ t('sectionExperiences.experiences') }}
+          </BDropdownItem>
+        </BDropdown>
 
-          <!-- 2. Egyszerű menüpontok router-hash módon -->
-          <BNavItem :to="{ path: '/', hash: '#issues' }" class="mx-2">
-            {{ t('issues') }}
-          </BNavItem>
-          <BNavItem :to="{ path: '/', hash: '#services' }" class="mx-2">
-            {{ t('services') }}
-          </BNavItem>
-          <BNavItem :to="{ path: '/', hash: '#contacts' }" class="mx-2">
-            {{ t('contacts') }}
-          </BNavItem>
-        </BNavbarNav>
-
-<!--      <BNavbarNav>-->
-<!--        <BDropdown :text="t('about')" variant="primary" class="mx-2">-->
-<!--          <BDropdownItem to="/about/aboutMe">{{ t('aboutMe') }}</BDropdownItem>-->
-<!--          <BDropdownItem to="/about/studies">{{ t('studies') }}</BDropdownItem>-->
-<!--          <BDropdownItem to="/about/experiences">{{ t('experiences') }}</BDropdownItem>-->
-<!--        </BDropdown>-->
-
-<!--        <BNavItem to="/issues" class="mx-2">-->
-<!--          {{ t('issues') }}-->
-<!--        </BNavItem>-->
-
-<!--        <BNavItem to="/services" class="mx-2">-->
-<!--          {{ t('services') }}-->
-<!--        </BNavItem>-->
-
-<!--        <BNavItem to="/contacts" class="mx-2">-->
-<!--          {{ t('contacts') }}-->
-<!--        </BNavItem>-->
-<!--      </BNavbarNav>-->
+        <BNavItem :to="{ path: '/', hash: '#issues' }" class="mx-2">
+          {{ t('sectionIssues.issues') }}
+        </BNavItem>
+        <BNavItem :to="{ path: '/', hash: '#services' }" class="mx-2">
+          {{ t('sectionServices.services') }}
+        </BNavItem>
+        <BNavItem :to="{ path: '/', hash: '#newsEvents' }" class="mx-2">
+          {{ t('sectionNewsEvents.newsEvents') }}
+        </BNavItem>
+        <BNavItem :to="{ path: '/', hash: '#contacts' }" class="mx-2">
+          {{ t('sectionContacts.contacts') }}
+        </BNavItem>
+      </BNavbarNav>
 
       <BNavbarNav class="ms-auto">
         <BNavItem>
           <BButton variant="light" class="mx-2" @click="openCalendlyPopup">
-            {{ t('booking') }}
+            {{ t('navBar.booking') }}
           </BButton>
         </BNavItem>
 
-        <BDropdown :text="t('language')" variant="light" class="mx-2">
+        <BDropdown :text="t('navBar.language')" variant="primary" class="mx-2">
           <BDropdownItem @click="changeLanguage('en')">English</BDropdownItem>
           <BDropdownItem @click="changeLanguage('hu')">Magyar</BDropdownItem>
         </BDropdown>
-
       </BNavbarNav>
 
     </BCollapse>
@@ -86,7 +65,7 @@ export default defineComponent({
 
     function openCalendlyPopup() {
       console.log('Opening Calendly popup...');
-      window.Calendly.initPopupWidget({ url: t('calendlyLink') })
+      window.Calendly.initPopupWidget({ url: t('navBar.calendlyLink') })
     }
 
     return {
