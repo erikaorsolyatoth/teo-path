@@ -35,16 +35,16 @@
       </ul>
     </ul>
 
-    <h5>{{ $t('sectionServices.service1Title') }}</h5>
+    <h5>{{ $t('sectionServices.service5Title') }}</h5>
     <ul>
-      <li>{{ $t('sectionServices.service1Description1') }}</li>
-      <li>{{ $t('sectionServices.service1Description2') }}</li>
+      <li>{{ $t('sectionServices.service5Description1') }}</li>
+      <li>{{ $t('sectionServices.service5Description2') }}</li>
     </ul>
 
-    <h5>{{ $t('sectionServices.service1Title') }}</h5>
+    <h5>{{ $t('sectionServices.service6Title') }}</h5>
     <ul>
-      <li>{{ $t('sectionServices.service1Description1') }}</li>
-      <li>{{ $t('sectionServices.service1Description2') }}</li>
+      <li>{{ $t('sectionServices.service6Description1') }}</li>
+      <li>{{ $t('sectionServices.service6Description2') }}</li>
     </ul>
   </div>
 </template>

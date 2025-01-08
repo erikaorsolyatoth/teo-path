@@ -22,8 +22,11 @@
         <BNavItem :to="{ path: '/', hash: '#issues' }" class="mx-2">
           {{ t('sectionIssues.issues') }}
         </BNavItem>
-        <BNavItem :to="{ path: '/', hash: '#services' }" class="mx-2">
+        <BNavItem :to="{ name: 'Services' }" class="mx-2">
           {{ t('sectionServices.services') }}
+        </BNavItem>
+        <BNavItem :to="{ name: 'BabyCounseling' }" class="mx-2">
+          {{ t('babyCounselingView.babyCounseling') }}
         </BNavItem>
         <BNavItem :to="{ path: '/', hash: '#newsEvents' }" class="mx-2">
           {{ t('sectionNewsEvents.newsEvents') }}
