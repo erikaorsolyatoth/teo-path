@@ -1,5 +1,6 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, computed } from 'vue';
+import { useRoute } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import TeoPathNavBar from "@/components/TeoPathNavBar.vue";
 import ScrollToTopArrow from "@/components/ScrollToTopArrow.vue";
@@ -13,13 +14,17 @@ import ContactsView from "@/views/ContactsView.vue";
 
 export default defineComponent({
   setup() {
+    const route = useRoute();
+
+    const isHomeView = computed(() => route.name === 'Home');
+
     const { locale } = useI18n();
 
     const changeLanguage = (lang: string) => {
       locale.value = lang;
     };
 
-    return { changeLanguage };
+    return { isHomeView, changeLanguage };
   },
   components: {
     ContactsView,
@@ -40,34 +45,39 @@ export default defineComponent({
 
   <TeoPathNavBar />
 
-  <div>
-    <b-img :src="require('./assets/logo-image-background.jpg')" fluid alt="People in a seating image"></b-img>
+  <div v-if="isHomeView">
+
+    <div>
+      <b-img :src="require('./assets/logo-image-background.jpg')" fluid alt="People in a seating image"></b-img>
+    </div>
+
+    <section id="aboutMe">
+      <AboutMeView/>
+    </section>
+    <section id="studies">
+      <StudiesView/>
+    </section>
+    <section id="experiences">
+      <ExperiencesView/>
+    </section>
+    <section id="issues">
+      <IssuesView/>
+    </section>
+    <section id="services">
+      <ServicesView/>
+    </section>
+    <section id="newsEvents">
+      <NewsEventsView/>
+    </section>
+    <section id="contacts">
+      <ContactsView/>
+    </section>
+
+    <ScrollToTopArrow/>
+
   </div>
 
-  <section id="aboutMe">
-    <AboutMeView/>
-  </section>
-  <section id="studies">
-    <StudiesView/>
-  </section>
-  <section id="experiences">
-    <ExperiencesView/>
-  </section>
-  <section id="issues">
-    <IssuesView/>
-  </section>
-  <section id="services">
-    <ServicesView/>
-  </section>
-  <section id="newsEvents">
-    <NewsEventsView/>
-  </section>
-  <section id="contacts">
-    <ContactsView/>
-  </section>
-
-  <ScrollToTopArrow/>
-
+  <router-view v-else />
 </template>
 
 <style>

@@ -5,8 +5,6 @@
     "booking": "Book an appointment"
   },
 
-  "welcome": "Welcome to Teo Path Coaching",
-
   "about": "About me",
   "sectionAboutMe": {
     "aboutMe": "About me",
@@ -53,8 +51,49 @@
     "service5Description2": "",
     "service6Title": "",
     "service6Description1": "",
-    "service7Description2": ""
+    "service6Description2": ""
+  },
 
+  "babyCounselingView": {
+    "babyCounseling": "Baby Counseling",
+    "servicesTitle": "Baby Counseling",
+    "servicesDescription": "desc...:",
+    "service1Title": "",
+    "service1Description1": "",
+    "service1Description11": "",
+    "service1Description12": "",
+    "service1Description2": "",
+    "service1Description21": "",
+    "service1Description22": "",
+    "service1Description3": "",
+    "service1Description31": "",
+    "service2Title": "",
+    "service2Description1": "",
+    "service2Description11": "",
+    "service2Description2": "",
+    "service2Description21": "",
+    "service2Description22": "",
+    "service2Description3": "",
+    "service2Description31": "",
+    "service2Description32": "",
+    "service3Title": "",
+    "service3Description1": "",
+    "service3Description11": "",
+    "service3Description12": "",
+    "service3Description2": "",
+    "service3Description21": "",
+    "service3Description22": "",
+    "service3Description3": "",
+    "service3Description31": "",
+    "service4Title": "",
+    "service4Description1": "",
+    "service4Description11": "",
+    "service4Description12": "",
+    "service4Description2": "",
+    "service4Description21": "",
+    "service4Description22": "",
+    "whyImportantTitle": "",
+    "whyImportantDescription": ""
   },
 
   "sectionNewsEvents": {

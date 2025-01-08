@@ -5,8 +5,6 @@
     "booking": "Időpontfoglalás"
   },
 
-  "welcome": "Üdvözlünk a Teo Path család fejlesztő oldalán!",
-
   "about": "Rólam",
   "sectionAboutMe": {
     "aboutMe": "Pár szóban rólam",
@@ -53,7 +51,49 @@
     "service5Description2": "Fiatal felnőttkor: Döntéshozatal, karriertervezés és önálló életkezdés érzelmi támogatása.",
     "service6Title": "Felnőttkor és időskor",
     "service6Description1": "Utolsó stádiumban lévő betegségekkel való szembenézés: Érzelmi és pszichológiai támogatás a nehéz helyzetek kezeléséhez.",
-    "service7Description2": "Gyászfeldolgozás: Segítség a veszteség feldolgozásában, az új életszakasz elfogadásában."
+    "service6Description2": "Gyászfeldolgozás: Segítség a veszteség feldolgozásában, az új életszakasz elfogadásában."
+  },
+
+  "babyCounselingView": {
+    "babyCounseling": "Csecsemőtanácsadás",
+    "servicesTitle": "Csecsemőtanácsadás",
+    "servicesDescription": "A csecsemőtanácsadás során célom, hogy segítsek a szülőknek megérteni és támogatni gyermekük optimális fejlődését, valamint megoldást kínáljak a csecsemővel kapcsolatos mindennapi kihívásokra. Az alábbi területekre összpontosítok:",
+    "service1Title": "A csecsemő optimális fejlődése és fejlesztése",
+    "service1Description1": "Érzelmi fejlődés",
+    "service1Description11": "Segítség a kötődési folyamat megértésében és a biztonságos szülő-gyermek kapcsolat kialakításában.",
+    "service1Description12": "Játékok és tevékenységek ajánlása, amelyek támogatják az érzelmi intelligencia fejlődését.",
+    "service1Description2": "Mozgásfejlődés",
+    "service1Description21": "Útmutatás a csecsemő életkorának megfelelő mozgásfejlesztő gyakorlatokhoz (hason fekvés, kúszás, mászás).",
+    "service1Description22": "Tanácsok a megfelelő környezet kialakításához, amely segíti a mozgás és a motoros készségek fejlődését.",
+    "service1Description3": "Érzékszervi fejlesztés",
+    "service1Description31": "Javaslatok az érzékszervek fejlesztésére, például színes tárgyak, halk zenék, érintés alapú játékok segítségével.",
+    "service2Title": "A csecsemő rutinjának kialakítása",
+    "service2Description1": "Napi rutin megértése és kialakítása",
+    "service2Description11": "A csecsemők számára az ismétlődő tevékenységek biztonságérzetet nyújtanak. Segítek a szülőknek olyan napirend összeállításában, amely figyelembe veszi a baba természetes ritmusát.",
+    "service2Description2": "Étkezési szokások",
+    "service2Description21": "Az etetések időzítésének és gyakoriságának megértése az életkor és a baba igényei alapján (anyatejes és tápszeres etetés).",
+    "service2Description22": "Tanácsok a hozzátáplálás kezdetére vonatkozóan.",
+    "service2Description3": "Játékidő",
+    "service2Description31": "Tevékenységek, amelyek serkentik a csecsemő kognitív és fizikai fejlődését.",
+    "service2Description32": "Az aktív időszakok és pihenőidők megfelelő arányának kialakítása.",
+    "service3Title": "Alvás terápia és szokások",
+    "service3Description1": "Egészséges alvási szokások kialakítása",
+    "service3Description11": "Segítség a szülőknek az alvási rutin bevezetésében, például fürdetés, esti mese, nyugodt környezet.",
+    "service3Description12": "Javaslatok a csecsemő cirkadián ritmusának támogatására (napfény, aktivitás nappal).",
+    "service3Description2": "Éjszakai ébredések kezelése",
+    "service3Description21": "Tippek a baba megnyugtatásához és visszaaltatásához minimális stimulációval.",
+    "service3Description22": "A szülőknek nyújtott tanácsok, hogy mikor érdemes éjszakai etetést csökkenteni.",
+    "service3Description3": "Alvásproblémák megoldása",
+    "service3Description31": "Tanácsadás olyan gyakori problémákra, mint a nehezen elalvás, éjszakai sírás, nappali alvási gondok.",
+    "service4Title": "Szülői támogatás és gyakorlati tanácsok",
+    "service4Description1": "Szülők érzelmi felkészítése",
+    "service4Description11": "A szülői stressz kezelése és az önbizalom növelése a csecsemő gondozásában.",
+    "service4Description12": "Pszichológiai támogatás a szülő-gyermek kapcsolat erősítéséhez.",
+    "service4Description2": "Gyakorlati útmutatás",
+    "service4Description21": "Pelenkázási, fürdetési és öltöztetési tanácsok, amelyek megkönnyítik a mindennapi teendőket.",
+    "service4Description22": "Javaslatok a baba biztonságos környezetének kialakításához otthon és útközben.",
+    "whyImportantTitle": "Miért fontos a csecsemőtanácsadás?",
+    "whyImportantDescription": "A csecsemő életének első éve alapvető fontosságú a testi, érzelmi és szociális fejlődése szempontjából. Az én feladatom, hogy a szülőket támogassam ebben a kihívásokkal teli, de csodálatos időszakban, és segítséget nyújtsak a legjobb döntések meghozatalában."
   },
 
   "sectionNewsEvents": {
