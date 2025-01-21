@@ -3,14 +3,16 @@ import { defineComponent, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import TeoPathNavBar from "@/components/TeoPathNavBar.vue";
-import ScrollToTopArrow from "@/components/ScrollToTopArrow.vue";
 import AboutMeView from "@/views/about/AboutMeView.vue";
 import ExperiencesView from "@/views/about/ExperiencesView.vue";
 import StudiesView from "@/views/about/StudiesView.vue";
-import IssuesView from "@/views/IssuesView.vue";
-import NewsEventsView from "@/views/NewsEventsView.vue";
-import ServicesView from "@/views/ServicesView.vue";
+// Not used for the time being
+// import IssuesView from "@/views/IssuesView.vue";
+// Not used for the time being
+// import NewsEventsView from "@/views/NewsEventsView.vue";
 import ContactsView from "@/views/ContactsView.vue";
+import ScrollToTopArrow from "@/components/ScrollToTopArrow.vue";
+import WhatsAppIcon from "@/components/WhatsAppIcon.vue";
 
 export default defineComponent({
   setup() {
@@ -27,15 +29,17 @@ export default defineComponent({
     return { isHomeView, changeLanguage };
   },
   components: {
+    TeoPathNavBar,
     ContactsView,
-    ServicesView,
-    NewsEventsView,
-    IssuesView,
+    // Not used for the time being
+    // NewsEventsView,
+    // Not used for the time being
+    // IssuesView,
     StudiesView,
     ExperiencesView,
     AboutMeView,
     ScrollToTopArrow,
-    TeoPathNavBar,
+    WhatsAppIcon,
   }
 });
 
@@ -60,21 +64,21 @@ export default defineComponent({
     <section id="experiences">
       <ExperiencesView/>
     </section>
-    <section id="issues">
-      <IssuesView/>
-    </section>
-    <section id="services">
-      <ServicesView/>
-    </section>
-    <section id="newsEvents">
-      <NewsEventsView/>
-    </section>
+<!--  Not used for the time being     -->
+<!--    <section id="issues">-->
+<!--      <IssuesView/>-->
+<!--    </section>-->
+<!--  Not used for the time being     -->
+<!--    <section id="newsEvents">-->
+<!--      <NewsEventsView/>-->
+<!--    </section>-->
     <section id="contacts">
       <ContactsView/>
     </section>
 
     <ScrollToTopArrow/>
 
+    <WhatsAppIcon phone-number="447947572606"/>
   </div>
 
   <router-view v-else />
