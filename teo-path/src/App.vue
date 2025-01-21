@@ -7,9 +7,10 @@ import ScrollToTopArrow from "@/components/ScrollToTopArrow.vue";
 import AboutMeView from "@/views/about/AboutMeView.vue";
 import ExperiencesView from "@/views/about/ExperiencesView.vue";
 import StudiesView from "@/views/about/StudiesView.vue";
-import IssuesView from "@/views/IssuesView.vue";
-import NewsEventsView from "@/views/NewsEventsView.vue";
-import ServicesView from "@/views/ServicesView.vue";
+// Not used for the time being
+// import IssuesView from "@/views/IssuesView.vue";
+// Not used for the time being
+// import NewsEventsView from "@/views/NewsEventsView.vue";
 import ContactsView from "@/views/ContactsView.vue";
 
 export default defineComponent({
@@ -28,9 +29,10 @@ export default defineComponent({
   },
   components: {
     ContactsView,
-    ServicesView,
-    NewsEventsView,
-    IssuesView,
+    // Not used for the time being
+    // NewsEventsView,
+    // Not used for the time being
+    // IssuesView,
     StudiesView,
     ExperiencesView,
     AboutMeView,
@@ -60,15 +62,14 @@ export default defineComponent({
     <section id="experiences">
       <ExperiencesView/>
     </section>
-    <section id="issues">
-      <IssuesView/>
-    </section>
-    <section id="services">
-      <ServicesView/>
-    </section>
-    <section id="newsEvents">
-      <NewsEventsView/>
-    </section>
+<!--  Not used for the time being     -->
+<!--    <section id="issues">-->
+<!--      <IssuesView/>-->
+<!--    </section>-->
+<!--  Not used for the time being     -->
+<!--    <section id="newsEvents">-->
+<!--      <NewsEventsView/>-->
+<!--    </section>-->
     <section id="contacts">
       <ContactsView/>
     </section>

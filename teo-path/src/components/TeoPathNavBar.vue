@@ -7,30 +7,42 @@
     <BCollapse id="nav-collapse" isNav>
 
       <BNavbarNav>
-        <BDropdown :text="t('about')" variant="primary" class="mx-2">
-          <BDropdownItem :to="{ path: '/', hash: '#aboutMe' }">
-            {{ t('sectionAboutMe.aboutMe') }}
-          </BDropdownItem>
-          <BDropdownItem :to="{ path: '/', hash: '#studies' }">
-            {{ t('sectionStudies.studies') }}
-          </BDropdownItem>
-          <BDropdownItem :to="{ path: '/', hash: '#experiences' }">
-            {{ t('sectionExperiences.experiences') }}
-          </BDropdownItem>
-        </BDropdown>
-
-        <BNavItem :to="{ path: '/', hash: '#issues' }" class="mx-2">
-          {{ t('sectionIssues.issues') }}
+        <BNavItem :to="{ path: '/', hash: '#aboutMe' }" class="mx-2">
+          {{ t('sectionAboutMe.aboutMe') }}
         </BNavItem>
+        <BNavItem :to="{ path: '/', hash: '#studies' }" class="mx-2">
+          {{ t('sectionStudies.studies') }}
+        </BNavItem>
+        <BNavItem :to="{ path: '/', hash: '#experiences' }" class="mx-2">
+          {{ t('sectionExperiences.experiences') }}
+        </BNavItem>
+<!--        <BDropdown :text="t('about')" variant="primary" class="mx-2">-->
+<!--          <BDropdownItem :to="{ path: '/', hash: '#aboutMe' }">-->
+<!--            {{ t('sectionAboutMe.aboutMe') }}-->
+<!--          </BDropdownItem>-->
+<!--          <BDropdownItem :to="{ path: '/', hash: '#studies' }">-->
+<!--            {{ t('sectionStudies.studies') }}-->
+<!--          </BDropdownItem>-->
+<!--          <BDropdownItem :to="{ path: '/', hash: '#experiences' }">-->
+<!--            {{ t('sectionExperiences.experiences') }}-->
+<!--          </BDropdownItem>-->
+<!--        </BDropdown>-->
+
+<!--  Not used for the time being     -->
+<!--        <BNavItem :to="{ path: '/', hash: '#issues' }" class="mx-2">-->
+<!--          {{ t('sectionIssues.issues') }}-->
+<!--        </BNavItem>-->
         <BNavItem :to="{ name: 'Services' }" class="mx-2">
           {{ t('sectionServices.services') }}
         </BNavItem>
-        <BNavItem :to="{ name: 'BabyCounseling' }" class="mx-2">
-          {{ t('babyCounselingView.babyCounseling') }}
-        </BNavItem>
-        <BNavItem :to="{ path: '/', hash: '#newsEvents' }" class="mx-2">
-          {{ t('sectionNewsEvents.newsEvents') }}
-        </BNavItem>
+<!--  Not used      -->
+<!--        <BNavItem :to="{ name: 'BabyCounseling' }" class="mx-2">-->
+<!--          {{ t('babyCounselingView.babyCounseling') }}-->
+<!--        </BNavItem>-->
+<!--  Not used for the time being     -->
+<!--        <BNavItem :to="{ path: '/', hash: '#newsEvents' }" class="mx-2">-->
+<!--          {{ t('sectionNewsEvents.newsEvents') }}-->
+<!--        </BNavItem>-->
         <BNavItem :to="{ path: '/', hash: '#contacts' }" class="mx-2">
           {{ t('sectionContacts.contacts') }}
         </BNavItem>
