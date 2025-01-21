@@ -3,7 +3,6 @@ import { defineComponent, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import TeoPathNavBar from "@/components/TeoPathNavBar.vue";
-import ScrollToTopArrow from "@/components/ScrollToTopArrow.vue";
 import AboutMeView from "@/views/about/AboutMeView.vue";
 import ExperiencesView from "@/views/about/ExperiencesView.vue";
 import StudiesView from "@/views/about/StudiesView.vue";
@@ -12,6 +11,8 @@ import StudiesView from "@/views/about/StudiesView.vue";
 // Not used for the time being
 // import NewsEventsView from "@/views/NewsEventsView.vue";
 import ContactsView from "@/views/ContactsView.vue";
+import ScrollToTopArrow from "@/components/ScrollToTopArrow.vue";
+import WhatsAppIcon from "@/components/WhatsAppIcon.vue";
 
 export default defineComponent({
   setup() {
@@ -28,6 +29,7 @@ export default defineComponent({
     return { isHomeView, changeLanguage };
   },
   components: {
+    TeoPathNavBar,
     ContactsView,
     // Not used for the time being
     // NewsEventsView,
@@ -37,7 +39,7 @@ export default defineComponent({
     ExperiencesView,
     AboutMeView,
     ScrollToTopArrow,
-    TeoPathNavBar,
+    WhatsAppIcon,
   }
 });
 
@@ -76,6 +78,7 @@ export default defineComponent({
 
     <ScrollToTopArrow/>
 
+    <WhatsAppIcon phone-number="447947572606"/>
   </div>
 
   <router-view v-else />
