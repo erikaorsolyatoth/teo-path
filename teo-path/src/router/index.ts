@@ -1,7 +1,8 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 import App from "@/App.vue";
 import ServicesView from "@/views/ServicesView.vue";
-import BabyCounselingView from '../views/BabyCounselingView.vue'
+// Not used
+// import BabyCounselingView from '../views/BabyCounselingView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -14,11 +15,12 @@ const routes: RouteRecordRaw[] = [
     name: 'Services',
     component: ServicesView,
   },
-  {
-    path: '/babyCounseling',
-    name: 'BabyCounseling',
-    component: BabyCounselingView,
-  },
+  // Not used
+  // {
+  //   path: '/babyCounseling',
+  //   name: 'BabyCounseling',
+  //   component: BabyCounselingView,
+  // },
 ];
 
 const router = createRouter({
