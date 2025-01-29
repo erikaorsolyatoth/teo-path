@@ -1,6 +1,6 @@
 <template>
-  <BNavbar toggleable="lg" type="dark" variant="primary" class="px-4 sticky-top" >
-    <BNavbarBrand href="#">Teo Path</BNavbarBrand>
+  <BNavbar toggleable="lg" type="light" :variant="scrolledPastCarousel ? 'dark' : 'transparent'" class="px-4 sticky-top" >
+    <BNavbarBrand href="#" @click="scrollToTop">Teo Path</BNavbarBrand>
 
     <BNavbarToggle target="nav-collapse" />
 
@@ -70,6 +70,12 @@ import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 export default defineComponent({
+  props: {
+    scrolledPastCarousel: {
+      type: Boolean,
+      required: true
+    }
+  },
   name: 'TeoPathNavBar',
   setup() {
     const { t, locale } = useI18n()
@@ -89,6 +95,12 @@ export default defineComponent({
       t,
     }
   },
+  methods: {
+    scrollToTop(event: Event) {
+      event.preventDefault(); // Megakadályozza az alapértelmezett hivatkozási működést
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  },
 })
 </script>
 
@@ -104,5 +116,21 @@ export default defineComponent({
 
   nav a.router-link-exact-active {
     color: #42b983;
+  }
+
+  .b-navbar.transparent {
+    background-color: transparent !important;
+    //background-color: rgba(255, 255, 255, 0.6);
+    z-index: 1000;
+    width: 100%; /* Teljes szélesség */
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .b-navbar.dark {
+    background-color: #343a40 !important;
+    //background-color: #ffffff;
+    //box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100%; /* Teljes szélesség */
   }
 </style>

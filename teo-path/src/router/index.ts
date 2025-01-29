@@ -28,10 +28,18 @@ const router = createRouter({
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth',
-      };
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          const element = document.querySelector(to.hash);
+          if (element) {
+            const offset = 40; // A navbar magassága (állítsd be megfelelően)
+            const top = element.getBoundingClientRect().top + window.scrollY - offset;
+            resolve({ left: 0, top, behavior: "smooth" });
+          } else {
+            resolve({ left: 0, top: 0 });
+          }
+        }, 100); // Kis késleltetés, hogy biztosan betöltődjön a tartalom
+      });
     }
     if (savedPosition) {
       return savedPosition;
