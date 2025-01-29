@@ -1,6 +1,6 @@
 <template>
   <BNavbar toggleable="lg" type="light" :variant="scrolledPastCarousel ? 'dark' : 'transparent'" class="px-4 sticky-top" >
-    <BNavbarBrand href="#" @click="scrollToTop">Teo Path</BNavbarBrand>
+    <BNavbarBrand href="#" @click="scrollToTop">TeoPath</BNavbarBrand>
 
     <BNavbarToggle target="nav-collapse" />
 
@@ -68,6 +68,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from "vue-router";
 
 export default defineComponent({
   props: {
@@ -89,16 +90,25 @@ export default defineComponent({
       window.Calendly.initPopupWidget({ url: t('navBar.calendlyLink') })
     }
 
+    const router = useRouter(); // Itt elérjük a Vue Routert
+
+    const scrollToTop = (event: Event) => {
+      event.preventDefault();
+
+      if (router.currentRoute.value.path === "/") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        router.push("/").then(() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+    };
+
     return {
       changeLanguage,
       openCalendlyPopup,
+      scrollToTop,
       t,
-    }
-  },
-  methods: {
-    scrollToTop(event: Event) {
-      event.preventDefault(); // Megakadályozza az alapértelmezett hivatkozási működést
-      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   },
 })
@@ -120,17 +130,33 @@ export default defineComponent({
 
   .b-navbar.transparent {
     background-color: transparent !important;
-    //background-color: rgba(255, 255, 255, 0.6);
     z-index: 1000;
     width: 100%; /* Teljes szélesség */
-    transition: background-color 0.3s ease-in-out;
   }
 
   .b-navbar.dark {
-    background-color: #343a40 !important;
-    //background-color: #ffffff;
-    //box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     width: 100%; /* Teljes szélesség */
+  }
+
+  .navbar.bg-transparent.navbar-expand-lg.px-4.sticky-top {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar.bg-dark.navbar-expand-lg.px-4.sticky-top {
+    background-color: #cfc4a8 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideDown 1.5s ease-out forwards;
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 </style>

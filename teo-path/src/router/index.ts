@@ -32,8 +32,9 @@ const router = createRouter({
         setTimeout(() => {
           const element = document.querySelector(to.hash);
           if (element) {
-            const offset = 40; // A navbar magassága (állítsd be megfelelően)
-            const top = element.getBoundingClientRect().top + window.scrollY - offset;
+            // const offset = 40; // A navbar magassága (állítsd be megfelelően)
+            // const top = element.getBoundingClientRect().top + window.scrollY - offset;
+            const top = element.getBoundingClientRect().top + window.scrollY;
             resolve({ left: 0, top, behavior: "smooth" });
           } else {
             resolve({ left: 0, top: 0 });

@@ -47,17 +47,17 @@ export default defineComponent({
     return {
       slides: [
         {
-          imgSrc: "https://images.pexels.com/photos/206959/pexels-photo-206959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          imgSrc: require('@/assets/header-picture.png'),
           caption: "Első Dia",
           text: "Ez az első dia leírása.",
         },
         {
-          imgSrc: "https://images.pexels.com/photos/347926/pexels-photo-347926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          imgSrc: require('@/assets/header-picture.png'),
           caption: "Második Dia",
           text: "Ez a második dia leírása.",
         },
         {
-          imgSrc: "https://images.pexels.com/photos/635705/pexels-photo-635705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          imgSrc: require('@/assets/header-picture.png'),
           caption: "Harmadik Dia",
           text: "Ez a harmadik dia leírása.",
         },
