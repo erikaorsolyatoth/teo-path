@@ -128,6 +128,10 @@ export default defineComponent({
     color: #42b983;
   }
 
+  .navbar-overlay {
+    background-color: #cfc4a8 !important;
+  }
+
   .b-navbar.transparent {
     background-color: transparent !important;
     z-index: 1000;

@@ -5,6 +5,24 @@
     "booking": "Időpontfoglalás"
   },
 
+  "carousel": {
+    "slide1": {
+      "caption": "Előzetes konzultáció",
+      "text": "Az első 15 perc ingyenes",
+      "buttonText": "Időpontot foglalok"
+    },
+    "slide2": {
+      "caption": "Második dia címe",
+      "text": "Második dia szövege",
+      "buttonText": "Második dia gomb"
+    },
+    "slide3": {
+      "caption": "Harmadik dia címe",
+      "text": "Harmadik dia szövege",
+      "buttonText": "Harmadik dia gomb"
+    }
+  },
+
   "about": "Röviden rólam",
   "sectionAboutMe": {
     "aboutMe": "Röviden rólam",

@@ -5,64 +5,98 @@
   <b-carousel
       id="carousel"
       :controls="true"
-      :indicators="true"
+      :indicators="false"
       background="#ababab"
       :interval="5000"
-      img-width="1024"
-      img-height="480"
+      img-height="768"
       class="mb-4"
+      v-model="activeSlide"
   >
-    <!-- Első dia -->
     <b-carousel-slide
-        :img-src="slides[0].imgSrc"
-        :caption="slides[0].caption"
-        :text="slides[0].text"
-        active="true"
-    ></b-carousel-slide>
-
-    <!-- Második dia -->
-    <b-carousel-slide
-        :img-src="slides[1].imgSrc"
-        :caption="slides[1].caption"
-        :text="slides[1].text"
-    ></b-carousel-slide>
-
-    <!-- Harmadik dia -->
-    <b-carousel-slide
-        :img-src="slides[2].imgSrc"
-        :caption="slides[2].caption"
-        :text="slides[2].text"
-    ></b-carousel-slide>
+        v-for="(slide, index) in slides"
+        :key="index"
+        :img-src="slide.backgroundImg"
+        :active="index === activeSlide"
+    >
+      <!-- Web view -->
+      <div class="d-none d-md-flex carousel-caption web">
+        <div style="display: flex">
+          <img :src="slide.slideImg" alt="Slide image" class="slide-image"/>
+          <div class="slide-content">
+            <div>
+              <h3>{{ slide.caption }}</h3>
+              <p>{{ slide.text }}</p>
+              <button class="carousel-button">{{ slide.buttonText }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile view -->
+      <div class="d-flex flex-column d-md-none carousel-caption mobile slide-container-mobile">
+        <img :src="slide.slideImg" alt="Slide image" class="slide-image-mobile"/>
+        <div class="slide-content-mobile">
+          <h3>{{ slide.caption }}</h3>
+          <p>{{ slide.text }}</p>
+          <button class="carousel-button">{{ slide.buttonText }}</button>
+        </div>
+      </div>
+    </b-carousel-slide>
   </b-carousel>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import {defineComponent, onBeforeMount, ref, watch} from "vue";
 import TeoPathNavBar from "@/components/TeoPathNavBar.vue";
+import {useI18n} from "vue-i18n";
 
 export default defineComponent({
   name: "ServicesCarousel",
   components: {TeoPathNavBar},
-  data() {
-    return {
-      slides: [
-        {
-          imgSrc: require('@/assets/header-picture.png'),
-          caption: "Első Dia",
-          text: "Ez az első dia leírása.",
-        },
-        {
-          imgSrc: require('@/assets/header-picture.png'),
-          caption: "Második Dia",
-          text: "Ez a második dia leírása.",
-        },
-        {
-          imgSrc: require('@/assets/header-picture.png'),
-          caption: "Harmadik Dia",
-          text: "Ez a harmadik dia leírása.",
-        },
-      ],
-    };
+  setup() {
+    const { t, locale } = useI18n();
+    const activeSlide = ref(0);
+
+    const slides = ref<Array<{
+      backgroundImg: string;
+      slideImg: string;
+      caption: string;
+      text: string;
+      buttonText: string;
+    }>>([]);
+
+    const getSlides = () => [
+      {
+        backgroundImg: require("@/assets/header-picture-background.png"),
+        slideImg: require("@/assets/header-picture-logo.png"),
+        caption: t("carousel.slide1.caption"),
+        text: t("carousel.slide1.text"),
+        buttonText: t("carousel.slide1.buttonText"),
+      },
+      {
+        backgroundImg: require("@/assets/header-picture-background.png"),
+        slideImg: require("@/assets/header-picture-logo.png"),
+        caption: t("carousel.slide2.caption"),
+        text: t("carousel.slide2.text"),
+        buttonText: t("carousel.slide2.buttonText"),
+      },
+      {
+        backgroundImg: require("@/assets/header-picture-background.png"),
+        slideImg: require("@/assets/header-picture-logo.png"),
+        caption: t("carousel.slide3.caption"),
+        text: t("carousel.slide3.text"),
+        buttonText: t("carousel.slide3.buttonText"),
+      },
+    ];
+
+    onBeforeMount(() => {
+      slides.value = getSlides();
+    });
+
+    watch(locale, () => {
+      slides.value = getSlides();
+    });
+
+    return { slides, activeSlide };
   },
   props: {
     scrolledPastCarousel: {
@@ -75,7 +109,7 @@ export default defineComponent({
 
 <style scoped>
 #carousel {
-  height: 480px;
+  height: 748px;
   margin: 0 auto;
 }
 
@@ -84,6 +118,66 @@ export default defineComponent({
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10; /* Magasabb, hogy a carousel felett legyen */
+  z-index: 10;
+}
+
+.carousel-caption.web {
+  bottom: 20rem !important;
+  left: 00% !important;
+}
+
+.carousel-caption.mobile {
+  bottom: 20rem !important;
+}
+
+.carousel-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carousel-button:hover {
+  background-color: #ffaa00;
+}
+
+.slide-image {
+  width: 300%;
+  object-fit: cover;
+}
+
+.slide-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background: transparent;
+  color: white;
+}
+
+.slide-container-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-image-mobile {
+  width: 200%;
+  height: auto;
+  object-fit: cover;
+}
+
+.slide-content-mobile {
+  background: transparent;
+  color: white;
 }
 </style>
