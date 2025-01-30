@@ -5,6 +5,24 @@
     "booking": "Book an appointment"
   },
 
+  "carousel": {
+    "slide1": {
+      "caption": "Preliminary consultation",
+      "text": "Free first 15 minutes",
+      "buttonText": "Book an appointment"
+    },
+    "slide2": {
+      "caption": "Second slide caption",
+      "text": "Second slide text",
+      "buttonText": "Second slide button"
+    },
+    "slide3": {
+      "caption": "Third slide caption",
+      "text": "Third slide text",
+      "buttonText": "Third slide button"
+    }
+  },
+
   "about": "About me shortly",
   "sectionAboutMe": {
     "aboutMe": "About me shortly",

@@ -1,4 +1,6 @@
 <template>
+  <TeoPathNavBar :scrolledPastCarousel="true"/>
+
   <div class="section-padding">
     <h2>{{ $t('sectionServices.servicesTitle') }}</h2>
     <h4>{{ $t('sectionServices.servicesDescription') }}</h4>
@@ -50,4 +52,5 @@
 </template>
 
 <script setup lang="ts">
+import TeoPathNavBar from "@/components/TeoPathNavBar.vue";
 </script>
