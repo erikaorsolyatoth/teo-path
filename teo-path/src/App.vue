@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent, computed } from 'vue';
+import { defineComponent, computed, ref, onMounted, onUnmounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import TeoPathNavBar from "@/components/TeoPathNavBar.vue";
@@ -13,6 +13,7 @@ import StudiesView from "@/views/about/StudiesView.vue";
 import ContactsView from "@/views/ContactsView.vue";
 import ScrollToTopArrow from "@/components/ScrollToTopArrow.vue";
 import WhatsAppIcon from "@/components/WhatsAppIcon.vue";
+import ServicesCarousel from "@/components/ServicesCarousel.vue";
 
 export default defineComponent({
   setup() {
@@ -26,10 +27,27 @@ export default defineComponent({
       locale.value = lang;
     };
 
-    return { isHomeView, changeLanguage };
+    const scrolledPastCarousel = ref(false);
+
+    const handleScroll = () => {
+      scrolledPastCarousel.value = window.scrollY > 200;
+    };
+
+    onMounted(() => {
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
+    });
+
+    onUnmounted(() => {
+      window.removeEventListener("scroll", handleScroll);
+      handleScroll();
+    });
+
+    return { isHomeView, changeLanguage, scrolledPastCarousel };
   },
   components: {
     TeoPathNavBar,
+    ServicesCarousel,
     ContactsView,
     // Not used for the time being
     // NewsEventsView,
@@ -47,12 +65,12 @@ export default defineComponent({
 
 <template>
 
-  <TeoPathNavBar />
+  <TeoPathNavBar ref="navbar" v-if="scrolledPastCarousel" :scrolledPastCarousel="scrolledPastCarousel"/>
 
   <div v-if="isHomeView">
 
-    <div>
-      <b-img :src="require('./assets/logo-image-background.jpg')" fluid alt="People in a seating image"></b-img>
+    <div ref="carousel" class="carousel-container">
+      <ServicesCarousel :scrolledPastCarousel="scrolledPastCarousel"/>
     </div>
 
     <section id="aboutMe">
@@ -99,5 +117,13 @@ export default defineComponent({
   padding-bottom: 50px;
   padding-left: 20px;
   text-align: left;
+}
+
+/* Carousel container */
+.carousel-container {
+  position: relative;
+  width: 100%; /* Teljes szélesség */
+  height: 500px; /* Carousel magasság */
+  overflow: hidden;
 }
 </style>
