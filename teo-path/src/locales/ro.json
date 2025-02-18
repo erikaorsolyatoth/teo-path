@@ -1,0 +1,154 @@
+{
+  "logoText": "TeoPath – Alături de tine în fiecare etapă a vieții.",
+  "navBar": {
+    "calendlyLink": "https://calendly.com/era-teopath/30min",
+    "language": {
+      "language": "Limbă",
+      "english": "Engleză",
+      "hungarian": "Maghiară",
+      "romanian": "Romanesc"
+    },
+    "booking": "Programează o întâlnire"
+  },
+
+  "carousel": {
+    "slide1": {
+      "caption": "Consultație preliminară",
+      "text": "Primele 15 minute sunt gratuite.",
+      "buttonText": "Fac o programare."
+    },
+    "slide2": {
+      "caption": "TeoPath",
+      "text": "Alături de tine în fiecare etapă a vieții.",
+      "buttonText": "Programează o întâlnire"
+    }
+  },
+
+  "aboutMeShortly": "Pe scurt despre mine",
+  "sectionAboutMe": {
+    "aboutMe": "Despre mine",
+    "slogen": "Ca psiholog specializat în consiliere, sunt dedicată să ajut oamenii să găsească echilibrul și armonia în toate etapele vieții lor. Am absolvit studiile universitare și de masterat la Universitatea Babeș-Bolyai din Cluj-Napoca, specializându-mă în consiliere și intervenție psihologică. În prezent, sunt studentă la Institutul Gamma din Iași, unde urmez un curs de formare ca terapeut familial sistemic.",
+    "aboutMeText": "De șapte ani locuiesc în Londra, unde lucrez cu adolescenți în educație și ofer consiliere pentru sugari în cadrul unei afaceri private. Scopul meu este să sprijin familiile, copiii și indivizii în depășirea dificultăților emoționale, construirea unor relații armonioase și adoptarea unui stil de viață sănătos. Ca mamă creștină, cred în importanța echilibrului fizic, mental și emoțional, care conduce la o viață fericită și împlinită.\n"
+  },
+
+  "sectionStudies": {
+    "studies": "Studiile mele",
+    "studiesText": "Pasiunea mea pentru înțelegerea comportamentului uman și sprijinirea indivizilor m-a determinat să urmez studii aprofundate în psihologie, specializându-mă în consiliere și intervenții psihologice.",
+    "bachelorsDegree":  "Licență:",
+    "university":  "Universitatea Babeș-Bolyai, Cluj-Napoca, România",
+    "bachelorsMainSubjects":  "Materii principale: psihologie generală, psihologie educațională, psihoterapie, psihologia sănătății.",
+    "thesis":  "Lucrare de licență:",
+    "thesisTitle":  "Modelele identității adolescenților și relația lor cu strategiile de formare a perspectivelor viitoare",
+    "mastersDegree":  "Master:",
+    "mastersDegreeText":  "Consiliere și Intervenție Psihologică, Universitatea Babeș-Bolyai, Cluj-Napoca",
+    "mastersMainSubjects":  "Materii principale: terapie familială, psihoncologie, consiliere pentru sfârșitul vieții, CBT, gestionarea conflictelor, psihosomatică.",
+    "dissertation":  "Disertație:",
+    "dissertationTitle":  "Influența educației religioase asupra sănătății mintale și stabilității emoționale a adolescenților",
+    "additionalTrainings":  "Cursuri suplimentare:",
+    "addTrain1":  "Curs de mindfulness acreditat (România)",
+    "addTrain2":  "Curs avansat de terapie cognitiv-comportamentală (Marea Britanie)",
+    "currentStudies":  "Studii în curs de desfășurare",
+    "currStudText":  "Sunt în prezent studentă la Institutul Gamma din Iași, unde studiez terapia familială sistemică pentru a-mi aprofunda cunoștințele în sprijinirea familiilor și relațiilor."
+  },
+
+  "sectionExpertise": {
+    "professionalExpertise": "Expertiză Profesională",
+    "profExp1": "Pasiunea mea pentru înțelegerea comportamentului uman și sprijinirea indivizilor m-a determinat să urmez studii aprofundate în psihologie, concentrându-mă pe consiliere și intervenții.",
+    "profExp2": "Expertiza mea profesională îmbină psihologia și îngrijirea, având o abordare holistică asupra sănătății mentale și fizice. Sunt specializat(ă) în:",
+    "profExp21": "Terapie și consiliere familială: Sprijinirea familiilor în rezolvarea conflictelor, reglarea emoțională și consolidarea comunicării.",
+    "profExp22": "Terapie cognitiv-comportamentală (TCC): Ajutarea indivizilor să-și remodeleze tiparele de gândire negativă pentru a obține dezvoltare personală și echilibru emoțional."
+  },
+
+  "sectionAffiliations": {
+    "professionalAffiliations": "Afiliere profesională",
+    "profAff1": "British Psychological Society (BPS) – Membru Graduate (2024)",
+    "profAff2": "Faculty for Children, Young People, and their Families (CYPF) – Membru asociat",
+    "profAff3": "Psychology of Education Section – Membru cu drepturi depline",
+    "profAff4": "Division of Educational and Child Psychology (DECP) – Membru general"
+  },
+
+  "sectionServices": {
+    "services": "Servicile mele",
+    "servicesTitle": "Serviciile mele – Consiliere psihologică și familială",
+    "servicesDescription": "În calitate de psiholog și consilier familial, ofer sprijin cuprinzător pentru gestionarea provocărilor din diferite etape ale vieții și situații. Ofer serviciile mele în următoarele domenii, în ordine cronologică:",
+    "service1Title": "Consiliere pentru relații și planificare familială",
+    "service1Description1": "Gestionarea problemelor timpurii în relații: Asistență pentru îmbunătățirea comunicării, rezolvarea conflictelor și consolidarea conexiunilor emoționale.",
+    "service1Description2": "Planificare familială: Pregătire pentru întemeierea unei familii, luând în considerare atât aspectele emoționale, cât și cele practice.",
+    "service2Title": "Sosirea unui nou membru al familiei",
+    "service2Description1": "Așteptarea unui nou membru al familiei: Gestionarea provocărilor emoționale, sociale și practice ale sarcinii.",
+    "service2Description2": "Dezvoltarea fetală: Oferirea de informații și sprijin emoțional pentru părinți în perioada dezvoltării fetale.",
+    "service2Description3": "Pregătirea pentru a deveni părinte: Pregătire pentru rolul de părinte, dezvoltarea autocunoașterii și revizuirea responsabilităților parentale.",
+    "service3Title": "Perioada postpartum",
+    "service3Description1": "Tratarea depresiei postpartum: Sprijin emoțional și soluții terapeutice pentru ameliorarea fluctuațiilor de dispoziție după naștere.",
+    "service3Description2": "Consiliere pentru îngrijirea sugarului: Asistență în înțelegerea și gestionarea nevoilor fizice și emoționale ale bebelușului.",
+    "service3Description3": "Gestionarea atașamentului: Crearea unei relații sigure părinte-copil, recunoașterea și soluționarea problemelor de atașament.",
+    "service4Title": "Copilăria și dezvoltarea",
+    "service4Description1": "Monitorizarea dezvoltării: Observarea și sprijinirea dezvoltării fizice, emoționale și sociale a copilului.",
+    "service4Description2": "Gestionarea conflictelor legate de nou-născut: Asistență în rezolvarea conflictelor parentale generate de situații noi.",
+    "service4Description3": "Gestionarea conflictelor de parenting: Armonizarea relației părinte-copil și dezvoltarea unor strategii eficiente de educație.",
+    "service5title": "Gestionarea problemelor specifice vârstei",
+    "service5Description1": "Copilărie",
+    "service5Description11": "Perioada de opoziție („criza de la doi ani”): Înțelegerea și gestionarea situațiilor care necesită răbdare și stabilirea limitelor.",
+    "service5Description12": "Prepubertatea și perioada de preadolescență: Sprijinirea schimbărilor emoționale și sociale ale copilului.",
+    "service5Description2": "Adolescența și tinerețea",
+    "service5Description21": "Pubertatea și adolescența: Sprijinirea formării identității și gestionarea problemelor de relație.",
+    "service5Description22": "Tinerețea: Sprijin emoțional pentru luarea deciziilor, planificarea carierei și începutul unei vieți independente.",
+    "service5Description3": "Adulți și vârstnici",
+    "service5Description31": "Confruntarea cu boli în stadiu terminal: Sprijin emoțional și psihologic pentru gestionarea situațiilor dificile.",
+    "service5Description32": "Consiliere pentru doliu: Asistență în procesarea pierderii și acceptarea unei noi etape a vieții."
+  },
+
+  "babyCounselingView": {
+    "babyCounseling": "Consiliere pentru sugari",
+    "servicesTitle": "Consiliere pentru sugari",
+    "servicesDescription": "În consilierea pentru sugari, scopul meu este să ajut părinții să înțeleagă și să sprijine dezvoltarea optimă a copilului lor, oferind în același timp soluții pentru provocările zilnice legate de bebeluș. Mă concentrez pe următoarele domenii:",
+    "service1Title": "Dezvoltarea și creșterea optimă a sugarului",
+    "service1Description1": "Dezvoltarea emoțională",
+    "service1Description11": "Asistență în înțelegerea procesului de atașament și crearea unei relații sigure părinte-copil.",
+    "service1Description12": "Recomandarea de jocuri și activități care sprijină dezvoltarea inteligenței emoționale.",
+    "service1Description2": "Dezvoltarea motorie",
+    "service1Description21": "Ghidare pentru exerciții de dezvoltare motorie adecvate vârstei sugarului (stat pe burtică, târâre, mers de-a bușilea).",
+    "service1Description22": "Sfaturi pentru crearea unui mediu adecvat care să sprijine mișcarea și dezvoltarea abilităților motorii.",
+    "service1Description3": "Dezvoltarea senzorială",
+    "service1Description31": "Sugestii pentru dezvoltarea senzorială, cum ar fi utilizarea obiectelor colorate, a muzicii line și a jocurilor bazate pe atingere.",
+    "service2Title": "Stabilirea rutinei sugarului",
+    "service2Description1": "Înțelegerea și stabilirea unei rutine zilnice",
+    "service2Description11": "Activitățile repetitive oferă un sentiment de siguranță sugarilor. Ajut părinții să creeze un program care respectă ritmul natural al copilului.",
+    "service2Description2": "Obiceiuri alimentare",
+    "service2Description21": "Înțelegerea programării și frecvenței hrănirilor în funcție de vârsta și nevoile copilului (alăptare și hrănire cu formulă).",
+    "service2Description22": "Sfaturi pentru începutul diversificării alimentației.",
+    "service2Description3": "Timp de joacă",
+    "service2Description31": "Activități care stimulează dezvoltarea cognitivă și fizică a sugarului.",
+    "service2Description32": "Stabilirea echilibrului corect între perioadele active și timpul de odihnă.",
+    "service3Title": "Terapia somnului și obiceiuri",
+    "service3Description1": "Stabilirea unor obiceiuri sănătoase de somn",
+    "service3Description11": "Sprijinirea părinților în stabilirea unei rutine de culcare, cum ar fi băița, poveștile de seară și crearea unui mediu liniștit.",
+    "service3Description12": "Sugestii pentru sprijinirea ritmului circadian al sugarului (lumina naturală, activitate pe timpul zilei).",
+    "service3Description2": "Gestionarea trezirilor nocturne",
+    "service3Description21": "Sfaturi pentru calmarea bebelușului și readormirea acestuia cu stimulare minimă.",
+    "service3Description22": "Sfaturi pentru părinți despre momentul potrivit pentru reducerea hrănirilor nocturne.",
+    "service3Description3": "Rezolvarea problemelor de somn",
+    "service3Description31": "Consiliere pentru probleme frecvente, cum ar fi dificultatea de a adormi, plânsul nocturn și problemele de somn din timpul zilei.",
+    "service4Title": "Sprijin pentru părinți și sfaturi practice",
+    "service4Description1": "Pregătirea emoțională a părinților",
+    "service4Description11": "Gestionarea stresului parental și creșterea încrederii în îngrijirea sugarului.",
+    "service4Description12": "Sprijin psihologic pentru consolidarea relației părinte-copil.",
+    "service4Description2": "Ghidare practică",
+    "service4Description21": "Sfaturi pentru schimbarea scutecelor, băiță și îmbrăcare, care facilitează sarcinile zilnice.",
+    "service4Description22": "Sugestii pentru crearea unui mediu sigur pentru bebeluș acasă și în deplasare.",
+    "whyImportantTitle": "De ce este importantă consilierea pentru sugari?",
+    "whyImportantDescription": "Primul an din viața unui sugar este esențial pentru dezvoltarea sa fizică, emoțională și socială. Rolul meu este să sprijin părinții în această perioadă plină de provocări, dar minunată, și să îi ajut să ia cele mai bune decizii."
+  },
+
+  "sectionNewsEvents": {
+    "newsEvents": "Știri, evenimente",
+    "newsEventsText": "Pagina de știri, evenimente"
+  },
+
+  "sectionContacts": {
+    "contacts": "Contacte",
+    "contactsTitle": "Contacte",
+    "contactsDescription": "Dacă simțiți că aveți nevoie de ajutor cu oricare dintre subiectele de mai sus, nu ezitați să mă contactați! Sunt disponibil pentru consultații individuale și familiale.",
+    "contactsText": "Datele mele de contact:"
+  }
+}

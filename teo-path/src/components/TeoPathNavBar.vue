@@ -55,10 +55,20 @@
           </BButton>
         </BNavItem>
 
-        <BDropdown :text="t('navBar.language')" variant="primary" class="mx-2">
-          <BDropdownItem @click="changeLanguage('en')">English</BDropdownItem>
-          <BDropdownItem @click="changeLanguage('hu')">Magyar</BDropdownItem>
+<!--        <BDropdown :text="t('navBar.language.language')" variant="primary" class="mx-2">-->
+        <BDropdown variant="primary" class="language-dropdown mx-2" menu-class="dropdown-transparent">
+          <template #button-content>
+            <img :src="currentFlag" alt="Language" class="flag-icon" />
+          </template>
+          <BDropdownItem @click="changeLanguage('en')"><img src="@/assets/flags/en_flag.png" alt="English" class="flag-icon" /></BDropdownItem>
+          <BDropdownItem @click="changeLanguage('hu')"><img src="@/assets/flags/hu_flag.png" alt="Hungarian" class="flag-icon" /></BDropdownItem>
+          <BDropdownItem @click="changeLanguage('ro')"><img src="@/assets/flags/ro_flag.png" alt="Romanian" class="flag-icon" /></BDropdownItem>
         </BDropdown>
+<!--        <BDropdown :text="t('navBar.language.language')" variant="primary" class="mx-2">-->
+<!--          <BDropdownItem @click="changeLanguage('en')">{{ t('navBar.language.english') }}</BDropdownItem>-->
+<!--          <BDropdownItem @click="changeLanguage('hu')">{{ t('navBar.language.hungarian') }}</BDropdownItem>-->
+<!--          <BDropdownItem @click="changeLanguage('ro')">{{ t('navBar.language.romanian') }}</BDropdownItem>-->
+<!--        </BDropdown>-->
       </BNavbarNav>
 
     </BCollapse>
@@ -66,7 +76,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import {computed, defineComponent} from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from "vue-router";
 
@@ -80,6 +90,13 @@ export default defineComponent({
   name: 'TeoPathNavBar',
   setup() {
     const { t, locale } = useI18n()
+
+    const currentFlag = computed(() => {
+      return locale.value === "en"
+          ? require("@/assets/flags/en_flag.png")
+          : locale.value === "hu" ? require("@/assets/flags/hu_flag.png")
+          : require("@/assets/flags/ro_flag.png");
+    });
 
     function changeLanguage(lang: string) {
       locale.value = lang
@@ -105,6 +122,7 @@ export default defineComponent({
     };
 
     return {
+      currentFlag,
       changeLanguage,
       openCalendlyPopup,
       scrollToTop,
@@ -162,5 +180,37 @@ export default defineComponent({
       transform: translateY(0);
       opacity: 1;
     }
+  }
+
+  /* ✅ A legördülő gomb háttere átlátszó */
+  .language-dropdown .btn {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0;
+  }
+
+  /* ✅ A legördülő menü háttere átlátszó */
+  .dropdown-transparent {
+    background: rgba(255, 255, 255, 0) !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* ✅ A legördülő tartalmát beállítjuk, hogy ne lógjon ki a képernyőről */
+  .dropdown-menu {
+    min-width: 48px !important;
+    right: 0 !important;
+    left: auto !important;
+    overflow: hidden;
+  }
+
+  /* ✅ Zászló ikon stílus */
+  .flag-icon {
+    width: 48px;
+    height: 32px;
+    //margin-right: 8px;
+    //vertical-align: middle;
+    horiz-align: right;
   }
 </style>

@@ -1,7 +1,13 @@
 {
+  "logoText": "TeoPath – Az élet minden szakaszában veled.",
   "navBar": {
     "calendlyLink": "https://calendly.com/era-teopath/30min",
-    "language": "Nyelv",
+    "language": {
+      "language": "Nyelv",
+      "english": "Angol",
+      "hungarian": "Magyar",
+      "romanian": "Román"
+    },
     "booking": "Időpontfoglalás"
   },
 
@@ -12,34 +18,53 @@
       "buttonText": "Időpontot foglalok"
     },
     "slide2": {
-      "caption": "Második dia címe",
-      "text": "Második dia szövege",
-      "buttonText": "Második dia gomb"
-    },
-    "slide3": {
-      "caption": "Harmadik dia címe",
-      "text": "Harmadik dia szövege",
-      "buttonText": "Harmadik dia gomb"
+      "caption": "TeoPath",
+      "text": "Az élet minden szakaszában veled.",
+      "buttonText": "Időpontot foglalok"
     }
   },
 
-  "about": "Röviden rólam",
+  "aboutMeShortly": "Röviden rólam",
   "sectionAboutMe": {
-    "aboutMe": "Röviden rólam",
-    "aboutMeText": "Rólam oldal"
-  },
-  "sectionStudies": {
-    "studies": "Tanulmányaim",
-    "studiesText": "Tanulmányaim oldal"
-  },
-  "sectionExperiences": {
-    "experiences": "Tapasztalataim",
-    "experiencesText": "Tapasztalataim oldal"
+    "aboutMe": "Rólam",
+    "slogen": "Pszichológiai tanácsadóként elkötelezett vagyok, hogy segítsek az embereknek megtalálni az egyensúlyt és harmóniát életük minden szakaszában. Egyetemi tanulmányaimat a kolozsvári Babeș-Bolyai Tudományegyetemen végeztem, ahol tanácsadásra és intervenciókra specializálódtam a mesterképzés során. Jelenleg a Iași-i Gamma Intézet hallgatója vagyok, ahol szisztematikus családterapeuta képzésen veszek részt.",
+    "aboutMeText": "Hét éve Londonban élek, ahol középiskolás diákokkal dolgozom, és magánvállalkozásban csecsemőtanácsadást nyújtok. Célom, hogy családokat, gyermekeket és egyéneket támogassak érzelmi nehézségek leküzdésében, harmonikus kapcsolatok kialakításában és az egészséges életmód megvalósításában. Keresztény édesanyaként hiszek a testi, lelki és érzelmi egyensúly fontosságában, amely boldog és kiegyensúlyozott életet eredményez."
   },
 
-  "sectionIssues": {
-    "issues": "Előforduló problémák",
-    "issuesText": "Problémák oldal"
+  "sectionStudies": {
+    "studies": "Tanulmányaim",
+    "studiesText": "Tanulmányaim oldal",
+    "bachelorsDegree":  "Alapképzés:",
+    "university":  "Babeș-Bolyai Egyetem, Kolozsvár, Románia",
+    "bachelorsMainSubjects":  "Főbb tárgyak: általános pszichológia, iskolapszichológia, munkahelyi pszichológia, fejlődéspszichológia, valláspszichológia, egészségpszichológia, klinikai pszichológia és pszichoterápia.",
+    "thesis":  "Szakdolgozat",
+    "thesisTitle":  "Serdülőkori identitás minták összefüggései a jövőkép kialakításának stratégiáival",
+    "mastersDegree":  "Mesterfok:",
+    "mastersDegreeText":  "Tanácsadás és Pszichológiai Intervenció, Babeș-Bolyai Egyetem, Kolozsvár",
+    "mastersMainSubjects":  "Főbb tárgyak: családterápia, pszicho-onkológia, életvégi tanácsadás, kognitív-viselkedésterápia (CBT), konfliktuskezelés, pszichoszomatikus zavarok.",
+    "dissertation":  "Disszertáció:",
+    "dissertationTitle":  "Vallásos nevelés hatása a serdülők mentális egészségére és az érzelmi stabilitásra",
+    "additionalTrainings":  "Továbbképzések",
+    "addTrain1":  "Akkreditált mindfulness tanfolyam (Románia)",
+    "addTrain2":  "Haladó kognitív viselkedésterápia tanfolyam (Egyesült Királyság)",
+    "currentStudies":  "Jelenlegi tanulmányaim",
+    "currStudText":  "Jelenleg a Gamma Intézet hallgatója vagyok Iași-ban, ahol szisztematikus családterápiát tanulok, hogy tovább bővítsem ismereteimet a családi rendszerek támogatásában."
+  },
+
+  "sectionExpertise": {
+    "professionalExpertise": "Szakterületeim",
+    "profExp1": "Az emberi viselkedés megértése és az egyének támogatása iránti szenvedélyem arra ösztönzött, hogy átfogó tanulmányokat folytassak a pszichológia területén, különös tekintettel a tanácsadásra és az intervenciókra.",
+    "profExp2": "Szakmai tudásom hidat képez a pszichológia és a gondoskodás között, holisztikus megközelítést alkalmazva a mentális és fizikai egészség területén. Szakterületeim a következők:",
+    "profExp21": "Családterápia és tanácsadás: Családok támogatása a konfliktusok megoldásában, az érzelmi szabályozás elősegítésében és a kommunikáció erősítésében.",
+    "profExp22": "Kognitív-viselkedésterápia (CBT): Az egyének segítése a negatív gondolkodási minták átalakításában, hogy elősegítsék személyes fejlődésüket és érzelmi egyensúlyukat."
+  },
+
+  "sectionAffiliations": {
+    "professionalAffiliations": "Szakmai tagságok",
+    "profAff1": "Brit Pszichológiai Társaság (BPS) – Végzett Tag (2024)",
+    "profAff2": "Gyermekekkel, fiatalokkal és családjaikkal foglalkozó kar (CYPF) – Társult Tag",
+    "profAff3": "Oktatáspszichológiai Szekció – Teljes jogú Tag",
+    "profAff4": "Oktatási és Gyermekpszichológiai Tagozat (DECP) – Általános Tag"
   },
 
   "sectionServices": {
@@ -61,15 +86,16 @@
     "service4Description1": "Fejlődés nyomon követése: A gyermek testi, érzelmi és szociális fejlődésének figyelemmel kísérése és támogatása.",
     "service4Description2": "Újszülöttkörüli konfliktusok kezelése: Segítség az új helyzetekből fakadó szülői konfliktusok megoldásában.",
     "service4Description3": "Nevelési konfliktusok kezelése: A szülő-gyermek kapcsolat harmonizálása, hatékony nevelési stratégiák kialakítása.",
-    "service4Description4": "Életkori specifikus problémák kezelése",
-    "service4Description41": "Dackorszak: Türelmet és határokat igénylő helyzetek megértése és kezelése.",
-    "service4Description42": "Prepubertás és kiskamasz kor: A gyermek érzelmi és szociális változásainak támogatása.",
-    "service5Title": "Serdülőkor és fiatal felnőttkor",
-    "service5Description1": "Pubertás és kamaszkor: Az identitás kialakulásának támogatása, kapcsolati problémák kezelése.",
-    "service5Description2": "Fiatal felnőttkor: Döntéshozatal, karriertervezés és önálló életkezdés érzelmi támogatása.",
-    "service6Title": "Felnőttkor és időskor",
-    "service6Description1": "Utolsó stádiumban lévő betegségekkel való szembenézés: Érzelmi és pszichológiai támogatás a nehéz helyzetek kezeléséhez.",
-    "service6Description2": "Gyászfeldolgozás: Segítség a veszteség feldolgozásában, az új életszakasz elfogadásában."
+    "service5title": "Életkori specifikus problémák kezelése",
+    "service5Description1": "Gyermekkor",
+    "service5Description11": "Dackorszak: Türelmet és határokat igénylő helyzetek megértése és kezelése.",
+    "service5Description12": "Prepubertás és kiskamasz kor: A gyermek érzelmi és szociális változásainak támogatása.",
+    "service5Description2": "Serdülőkor és fiatal felnőttkor",
+    "service5Description21": "Pubertás és kamaszkor: Az identitás kialakulásának támogatása, kapcsolati problémák kezelése.",
+    "service5Description22": "Fiatal felnőttkor: Döntéshozatal, karriertervezés és önálló életkezdés érzelmi támogatása.",
+    "service5Description3": "Felnőttkor és időskor",
+    "service5Description31": "Utolsó stádiumban lévő betegségekkel való szembenézés: Érzelmi és pszichológiai támogatás a nehéz helyzetek kezeléséhez.",
+    "service5Description32": "Gyászfeldolgozás: Segítség a veszteség feldolgozásában, az új életszakasz elfogadásában."
   },
 
   "babyCounselingView": {

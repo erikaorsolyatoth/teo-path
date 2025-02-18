@@ -1,7 +1,13 @@
 {
+  "logoText": "TeoPath – With you through every stage of life.",
   "navBar": {
     "calendlyLink": "https://calendly.com/era-teopath/30min",
-    "language": "Language",
+    "language": {
+      "language": "Language",
+      "english": "English",
+      "hungarian": "Hungarian",
+      "romanian": "Romanian"
+    },
     "booking": "Book an appointment"
   },
 
@@ -12,106 +18,126 @@
       "buttonText": "Book an appointment"
     },
     "slide2": {
-      "caption": "Second slide caption",
-      "text": "Second slide text",
-      "buttonText": "Second slide button"
-    },
-    "slide3": {
-      "caption": "Third slide caption",
-      "text": "Third slide text",
-      "buttonText": "Third slide button"
+      "caption": "TeoPath",
+      "text": "With you through every stage of life.",
+      "buttonText": "Book an appointment"
     }
   },
 
-  "about": "About me shortly",
+  "aboutMeShortly": "About me shortly",
   "sectionAboutMe": {
-    "aboutMe": "About me shortly",
-    "aboutMeText": "About me page"
-  },
-  "sectionStudies": {
-    "studies": "My studies",
-    "studiesText": "Studies page"
-  },
-  "sectionExperiences": {
-    "experiences": "My experiences",
-    "experiencesText": "Experiences page"
+    "aboutMe": "About me",
+    "slogen": "As a psychologist specializing in counseling, I am dedicated to helping individuals find balance and harmony at every stage of their lives. I completed my undergraduate and master’s studies at Babeș-Bolyai University in Cluj-Napoca, focusing on counseling and psychological interventions. I am currently a student at the Gamma Institute in Iași, where I am training to become a systemic family therapist.",
+    "aboutMeText": "For the past seven years, I have been living in London, working with teenagers in education and providing infant counseling through my private practice. My goal is to support families, children, and individuals in overcoming emotional challenges, building harmonious relationships, and achieving a healthier lifestyle. As a Christian mother, I believe in the importance of physical, mental, and emotional balance, which leads to a happy and fulfilled life."
   },
 
-  "sectionIssues": {
-    "issues": "When to call me",
-    "issuesText": "Issues page"
+  "sectionStudies": {
+    "studies": "My studies",
+    "studiesText": "Studies page",
+    "bachelorsDegree":  "Bachelor's Degree:",
+    "university":  "Babeș-Bolyai University, Cluj-Napoca, Romania",
+    "bachelorsMainSubjects":  "Main subjects: general psychology, educational psychology, clinical psychology, health psychology.",
+    "thesis":  "Bachelor's thesis",
+    "thesisTitle":  "Adolescents' Identity Models and Their Relationship with Strategies for Shaping Future Perspectives",
+    "mastersDegree":  "Master's Degree:",
+    "mastersDegreeText":  "Counseling and Psychological Intervention, Babeș-Bolyai University",
+    "mastersMainSubjects":  "Main subjects: family therapy, psycho-oncology, end-of-life counseling, CBT, conflict management, psychosomatics.",
+    "dissertation":  "Dissertation:",
+    "dissertationTitle":  "The Impact of Religious Education on Adolescents' Mental Health and Emotional Stability",
+    "additionalTrainings":  "Additional Training",
+    "addTrain1":  "Accredited Mindfulness Training (Romania)",
+    "addTrain2":  "Advanced Cognitive-Behavioral Therapy Training (UK)",
+    "currentStudies":  "Current Studies",
+    "currStudText":  "I am currently a student at the Gamma Institute in Iași, where I am studying systemic family therapy to further deepen my knowledge in supporting family dynamics and relationships."
+  },
+
+  "sectionExpertise": {
+    "professionalExpertise": "Professional Expertise",
+    "profExp1": "My passion for understanding human behavior and supporting individuals led me to pursue comprehensive studies in psychology, focusing on counseling and interventions.",
+    "profExp2": "My professional expertise bridges both psychology and caregiving, with a holistic approach to mental and physical health. I specialize in:",
+    "profExp21": "Family Therapy and Counseling: Supporting families through conflict resolution, emotional regulation, and strengthening communication.",
+    "profExp22": "Cognitive-Behavioral Therapy (CBT): Helping individuals reshape negative thought patterns to achieve personal growth and emotional balance."
+  },
+
+  "sectionAffiliations": {
+    "professionalAffiliations": "Professional Affiliations",
+    "profAff1": "British Psychological Society (BPS) – Graduate Member (2024)",
+    "profAff2": "Faculty for Children, Young People, and their Families (CYPF) – Associate Member",
+    "profAff3": "Psychology of Education Section – Full Member",
+    "profAff4": "Division of Educational and Child Psychology (DECP) – General Member"
   },
 
   "sectionServices": {
     "services": "My services",
     "servicesTitle": "My services - Psychological and family counseling",
-    "servicesDescription": "desc...:",
-    "service1Title": "",
-    "service1Description1": "",
-    "service1Description2": "",
-    "service2Title": "",
-    "service2Description1": "",
-    "service2Description2": "",
-    "service2Description3": "",
-    "service3Title": "",
-    "service3Description1": "",
-    "service3Description2": "",
-    "service3Description3": "",
-    "service4Title": "",
-    "service4Description1": "",
-    "service4Description2": "",
-    "service4Description3": "",
-    "service4Description4": "",
-    "service4Description41": "",
-    "service4Description42": "",
-    "service5Title": "",
-    "service5Description1": "",
-    "service5Description2": "",
-    "service6Title": "",
-    "service6Description1": "",
-    "service6Description2": ""
+    "servicesDescription": "As a psychologist and family counselor, I provide comprehensive support in managing the challenges of different life stages and situations. My services are offered in the following areas, in chronological order:",
+    "service1Title": "Relationship and Family Planning Counseling",
+    "service1Description1": "Addressing Early Relationship Issues: Assistance in improving communication, conflict resolution, and strengthening emotional connections.",
+    "service1Description2": "Family Planning: Preparation for starting a family, considering both emotional and practical aspects.",
+    "service2Title": "Arrival of a new family member",
+    "service2Description1": "Expecting a new family member: Managing the emotional, social, and practical challenges of pregnancy.",
+    "service2Description2": "Fetal development: Providing information and emotional support for parents during the period of fetal development.",
+    "service2Description3": "Preparation for Parenthood: Preparing for the role of a parent, developing self-awareness, and reviewing parental responsibilities.",
+    "service3Title": "Postpartum period",
+    "service3Description1": "Treatment of postpartum depression: Emotional support and therapeutic solutions to alleviate mood swings after childbirth.",
+    "service3Description2": "Infant care counseling: Assistance in understanding and addressing the physical and emotional needs of the baby.",
+    "service3Description3": "Managing attachment: Establishing a secure parent-child relationship, recognizing and addressing attachment issues.",
+    "service4Title": "Childhood and development",
+    "service4Description1": "Monitoring development: Observing and supporting the physical, emotional, and social development of the child.",
+    "service4Description2": "Managing newborn-related conflicts: Assistance in resolving parental conflicts arising from new situations.",
+    "service4Description3": "Managing parenting conflicts: Harmonizing the parent-child relationship and developing effective parenting strategies.",
+    "service5title": "Managing age-specific problems",
+    "service5Description1": "Childhood",
+    "service5Description11": "The 'terrible twos': Understanding and managing situations that require patience and setting boundaries.",
+    "service5Description12": "Pre-puberty and early adolescence: Supporting the emotional and social changes of the child.",
+    "service5Description2": "Adolescence and young adulthood",
+    "service5Description21": "Puberty and adolescence: Supporting identity formation and managing relationship issues.",
+    "service5Description22": "Young adulthood: Emotional support for decision-making, career planning, and starting an independent life.",
+    "service5Description3": "Adulthood and old age",
+    "service5Description31": "Facing terminal illnesses: Emotional and psychological support for coping with difficult situations.",
+    "service5Description32": "Grief counseling: Assistance in processing loss and accepting a new phase of life."
   },
 
   "babyCounselingView": {
     "babyCounseling": "Baby Counseling",
     "servicesTitle": "Baby Counseling",
-    "servicesDescription": "desc...:",
-    "service1Title": "",
-    "service1Description1": "",
-    "service1Description11": "",
-    "service1Description12": "",
-    "service1Description2": "",
-    "service1Description21": "",
-    "service1Description22": "",
-    "service1Description3": "",
-    "service1Description31": "",
-    "service2Title": "",
-    "service2Description1": "",
-    "service2Description11": "",
-    "service2Description2": "",
-    "service2Description21": "",
-    "service2Description22": "",
-    "service2Description3": "",
-    "service2Description31": "",
-    "service2Description32": "",
-    "service3Title": "",
-    "service3Description1": "",
-    "service3Description11": "",
-    "service3Description12": "",
-    "service3Description2": "",
-    "service3Description21": "",
-    "service3Description22": "",
-    "service3Description3": "",
-    "service3Description31": "",
-    "service4Title": "",
-    "service4Description1": "",
-    "service4Description11": "",
-    "service4Description12": "",
-    "service4Description2": "",
-    "service4Description21": "",
-    "service4Description22": "",
-    "whyImportantTitle": "",
-    "whyImportantDescription": ""
+    "servicesDescription": "In infant counseling, my goal is to help parents understand and support their child's optimal development while offering solutions to everyday challenges related to their baby. I focus on the following areas:",
+    "service1Title": "The infant's optimal development and growt",
+    "service1Description1": "Emotional development",
+    "service1Description11": "Assistance in understanding the bonding process and establishing a secure parent-child relationship.",
+    "service1Description12": "Recommendation of games and activities that support the development of emotional intelligence.",
+    "service1Description2": "Motor development",
+    "service1Description21": "Guidance on age-appropriate motor development exercises for infants (tummy time, crawling, creeping).",
+    "service1Description22": "Advice on creating an appropriate environment that supports movement and the development of motor skills.",
+    "service1Description3": "Sensory development",
+    "service1Description31": "Suggestions for sensory development, such as using colorful objects, soft music, and touch-based games.",
+    "service2Title": "Establishing the infant's routine",
+    "service2Description1": "Understanding and establishing a daily routine",
+    "service2Description11": "Repetitive activities provide a sense of security for infants. I help parents create a schedule that respects the baby's natural rhythm.",
+    "service2Description2": "Eating habits",
+    "service2Description21": "Understanding the timing and frequency of feedings based on the baby's age and needs (breastfeeding and formula feeding).",
+    "service2Description22": "Advice on starting complementary feeding.",
+    "service2Description3": "Playtime",
+    "service2Description31": "Activities that stimulate the infant's cognitive and physical development.",
+    "service2Description32": "Establishing the proper balance between active periods and rest times.",
+    "service3Title": "Sleep therapy and habits",
+    "service3Description1": "Establishing healthy sleep habits",
+    "service3Description11": "Assisting parents in establishing a bedtime routine, such as bathing, bedtime stories, and creating a calm environment.",
+    "service3Description12": "Suggestions to support the infant's circadian rhythm (sunlight, daytime activity).",
+    "service3Description2": "Managing nighttime awakenings",
+    "service3Description21": "Tips for soothing the baby and putting them back to sleep with minimal stimulation.",
+    "service3Description22": "Advice for parents on when to reduce nighttime feedings.",
+    "service3Description3": "Solving sleep problems",
+    "service3Description31": "Counseling for common issues such as difficulty falling asleep, nighttime crying, and daytime sleep challenges.",
+    "service4Title": "Parental support and practical advice",
+    "service4Description1": "Emotional preparation for parents",
+    "service4Description11": "Managing parental stress and boosting confidence in infant care.",
+    "service4Description12": "Psychological support to strengthen the parent-child relationship.",
+    "service4Description2": "Practical guidance",
+    "service4Description21": "Diapering, bathing, and dressing advice to make daily tasks easier.",
+    "service4Description22": "Suggestions for creating a safe environment for the baby at home and on the go.",
+    "whyImportantTitle": "Why is infant counseling important?",
+    "whyImportantDescription": "The first year of an infant's life is fundamental for their physical, emotional, and social development. My role is to support parents during this challenging yet wonderful period and assist them in making the best decisions."
   },
 
   "sectionNewsEvents": {
@@ -122,7 +148,7 @@
   "sectionContacts": {
     "contacts": "Contacts",
     "contactsTitle": "Contacts",
-    "contactsDescription": "",
-    "contactsText": ""
+    "contactsDescription": "If you feel you need help with any of the above-mentioned topics, please contact me with confidence! I am available for individual and family consultations.",
+    "contactsText": "My contact details:"
   }
 }
