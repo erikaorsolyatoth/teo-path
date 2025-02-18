@@ -21,6 +21,7 @@
 <!--          {{ t('sectionAffiliations.affiliations') }}-->
 <!--        </BNavItem>-->
         <BDropdown :text="t('aboutMeShortly')" variant="primary" class="language-dropdown mx-2" :class="{ 'active-menu': isParentActive(['aboutMe', 'studies', 'expertises', 'affiliations']) }">
+<!--        <BDropdown :text="t('aboutMeShortly')" variant="primary" class="language-dropdown mx-2" toggle-class="dropdown-toggle-custom" menu-class="dropdown-menu-custom" :class="{ 'active-menu': isParentActive(['aboutMe', 'studies', 'expertises', 'affiliations']), 'dropup': isMobile.value }">-->
           <BDropdownItem :to="{ path: '/', hash: '#aboutMe' }" class="menu-item" :class="{ 'active-submenu': isActive(['aboutMe']) }">
             {{ t('sectionAboutMe.aboutMe') }}
           </BDropdownItem>
@@ -74,7 +75,7 @@
 </template>
 
 <script lang="ts">
-import {computed, defineComponent} from 'vue'
+import {computed, defineComponent, onMounted, onUnmounted, ref} from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from "vue-router";
 
@@ -119,63 +120,31 @@ export default defineComponent({
       }
     };
 
-    // const isActive = (paths: string[]) => {
-    //   const currentPath = router.currentRoute.value.path;
-    //   const currentHash = router.currentRoute.value.hash;
-    //
-    //   console.log("Current Path:", currentPath);
-    //   console.log("Current Hash:", currentHash);
-    //
-    //   if (paths.includes(currentPath)) {
-    //     return true;
-    //   }
-    //
-    //   if (currentHash) {
-    //     return paths.some(path => currentHash === `#${path.replace('/', '')}`);
-    //   }
-    //
-    //   return false;
-    // };
-    // const isActive = (paths: string[], checkParent = false) => {
-    //   const currentPath = router.currentRoute.value.path;
-    //   const currentHash = router.currentRoute.value.hash;
-    //
-    //   console.log("Current Path:", currentPath);
-    //   console.log("Current Hash:", currentHash);
-    //
-    //   // Ellenőrizzük, hogy az aktuális útvonal benne van-e a listában
-    //   const isPathActive = paths.includes(currentPath);
-    //
-    //   // Ellenőrizzük, hogy a hash alapján aktív-e valamelyik szekció
-    //   const isHashActive = currentHash
-    //       ? paths.some(path => currentHash === `#${path.replace('/', '')}`)
-    //       : false;
-    //
-    //   // Ha checkParent igaz, akkor almenü elemként az aktív főmenüpontot is visszaadjuk
-    //   if (checkParent) {
-    //     return isPathActive || isHashActive;
-    //   }
-    //
-    //   return isPathActive || isHashActive;
-    // };
     const isActive = (paths: string[]) => {
       const currentPath = router.currentRoute.value.path;
       const currentHash = router.currentRoute.value.hash;
       return paths.some(path => currentPath.includes(path) || currentHash.includes(path));
     };
 
-    // const isParentActive = computed(() => {
-    //   return isActive(['/aboutMe', '/studies', '/expertises', '/affiliations']);
-    // });
     const isParentActive = (paths: string[]) => {
       const currentHash = router.currentRoute.value.hash;
-
-      console.log("paths: ", paths)
-      console.log("Current Hash: ", currentHash);
-      console.log("Verdict:", paths.some(path => currentHash.includes(path)));
-
       return paths.some(path => currentHash.includes(path));
     };
+
+    // const isMobile = ref(window.innerWidth < 992);
+    //
+    // const handleResize = () => {
+    //   isMobile.value = window.innerWidth < 992;
+    //   console.log("isMobile: ", isMobile);
+    // };
+    //
+    // onMounted(() => {
+    //   window.addEventListener("resize", handleResize);
+    // });
+    //
+    // onUnmounted(() => {
+    //   window.removeEventListener("resize", handleResize);
+    // });
 
     return {
       currentFlag,
@@ -185,6 +154,8 @@ export default defineComponent({
       t,
       isActive,
       isParentActive
+      // ,
+      // isMobile
     }
   },
 })
@@ -290,3 +261,23 @@ export default defineComponent({
     font-weight: bold;
   }
 </style>
+
+  //@media (max-width: 992px) {
+  //  .dropdown-menu-custom {
+  //    display: block;
+  //    position: static !important;
+  //    width: 100%;
+  //    margin-top: 0 !important;
+  //  }
+  //
+  //  .dropdown-toggle-custom {
+  //    width: 100%;
+  //  }
+  //
+  //  .b-dropdown.show .dropdown-menu {
+  //    position: static !important;
+  //    display: block !important;
+  //    width: 100%;
+  //    margin-top: 0 !important;
+  //  }
+  //}
