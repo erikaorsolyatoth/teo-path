@@ -30,24 +30,27 @@
       <li>{{ $t('sectionServices.service4Description1') }}</li>
       <li>{{ $t('sectionServices.service4Description2') }}</li>
       <li>{{ $t('sectionServices.service4Description3') }}</li>
-      <li>{{ $t('sectionServices.service4Description4') }}</li>
+    </ul>
+
+    <h5>{{ $t('sectionServices.service5title') }}</h5>
+    <ul>
+      <li>{{ $t('sectionServices.service5Description1') }}</li>
       <ul>
-        <li>{{ $t('sectionServices.service4Description41') }}</li>
-        <li>{{ $t('sectionServices.service4Description42') }}</li>
+        <li>{{ $t('sectionServices.service5Description11') }}</li>
+        <li>{{ $t('sectionServices.service5Description22') }}</li>
+      </ul>
+      <li>{{ $t('sectionServices.service5Description2') }}</li>
+      <ul>
+        <li>{{ $t('sectionServices.service5Description21') }}</li>
+        <li>{{ $t('sectionServices.service5Description22') }}</li>
+      </ul>
+      <h5>{{ $t('sectionServices.service5Description3') }}</h5>
+      <ul>
+        <li>{{ $t('sectionServices.service5Description31') }}</li>
+        <li>{{ $t('sectionServices.service5Description42') }}</li>
       </ul>
     </ul>
 
-    <h5>{{ $t('sectionServices.service5Title') }}</h5>
-    <ul>
-      <li>{{ $t('sectionServices.service5Description1') }}</li>
-      <li>{{ $t('sectionServices.service5Description2') }}</li>
-    </ul>
-
-    <h5>{{ $t('sectionServices.service6Title') }}</h5>
-    <ul>
-      <li>{{ $t('sectionServices.service6Description1') }}</li>
-      <li>{{ $t('sectionServices.service6Description2') }}</li>
-    </ul>
   </div>
 </template>
 
