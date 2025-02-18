@@ -51,7 +51,8 @@
     "currStudText":  "I am currently a student at the Gamma Institute in Iași, where I am studying systemic family therapy to further deepen my knowledge in supporting family dynamics and relationships."
   },
 
-  "sectionExpertise": {
+  "sectionExpertises": {
+    "expertises": "Professional Expertises",
     "professionalExpertise": "Professional Expertise",
     "profExp1": "My passion for understanding human behavior and supporting individuals led me to pursue comprehensive studies in psychology, focusing on counseling and interventions.",
     "profExp2": "My professional expertise bridges both psychology and caregiving, with a holistic approach to mental and physical health. I specialize in:",
@@ -60,6 +61,7 @@
   },
 
   "sectionAffiliations": {
+    "affiliations": "Professional Affiliations",
     "professionalAffiliations": "Professional Affiliations",
     "profAff1": "British Psychological Society (BPS) – Graduate Member (2024)",
     "profAff2": "Faculty for Children, Young People, and their Families (CYPF) – Associate Member",

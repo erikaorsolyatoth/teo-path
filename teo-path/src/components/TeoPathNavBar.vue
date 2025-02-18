@@ -7,32 +7,35 @@
     <BCollapse id="nav-collapse" isNav>
 
       <BNavbarNav>
-        <BNavItem :to="{ path: '/', hash: '#aboutMe' }" class="mx-2">
-          {{ t('sectionAboutMe.aboutMe') }}
-        </BNavItem>
-        <BNavItem :to="{ path: '/', hash: '#studies' }" class="mx-2">
-          {{ t('sectionStudies.studies') }}
-        </BNavItem>
-        <BNavItem :to="{ path: '/', hash: '#experiences' }" class="mx-2">
-          {{ t('sectionExperiences.experiences') }}
-        </BNavItem>
-<!--        <BDropdown :text="t('about')" variant="primary" class="mx-2">-->
-<!--          <BDropdownItem :to="{ path: '/', hash: '#aboutMe' }">-->
-<!--            {{ t('sectionAboutMe.aboutMe') }}-->
-<!--          </BDropdownItem>-->
-<!--          <BDropdownItem :to="{ path: '/', hash: '#studies' }">-->
-<!--            {{ t('sectionStudies.studies') }}-->
-<!--          </BDropdownItem>-->
-<!--          <BDropdownItem :to="{ path: '/', hash: '#experiences' }">-->
-<!--            {{ t('sectionExperiences.experiences') }}-->
-<!--          </BDropdownItem>-->
-<!--        </BDropdown>-->
 
-<!--  Not used for the time being     -->
-<!--        <BNavItem :to="{ path: '/', hash: '#issues' }" class="mx-2">-->
-<!--          {{ t('sectionIssues.issues') }}-->
+<!--        <BNavItem :to="{ path: '/', hash: '#aboutMe' }" class="mx-2">-->
+<!--          {{ t('sectionAboutMe.aboutMe') }}-->
 <!--        </BNavItem>-->
-        <BNavItem :to="{ name: 'Services' }" class="mx-2">
+<!--        <BNavItem :to="{ path: '/', hash: '#studies' }" class="mx-2">-->
+<!--          {{ t('sectionStudies.studies') }}-->
+<!--        </BNavItem>-->
+<!--        <BNavItem :to="{ path: '/', hash: '#expertises' }" class="mx-2">-->
+<!--          {{ t('sectionExpertises.expertises') }}-->
+<!--        </BNavItem>-->
+<!--        <BNavItem :to="{ path: '/', hash: '#affiliations' }" class="mx-2">-->
+<!--          {{ t('sectionAffiliations.affiliations') }}-->
+<!--        </BNavItem>-->
+        <BDropdown :text="t('aboutMeShortly')" variant="primary" class="language-dropdown mx-2" :class="{ 'active-menu': isParentActive(['aboutMe', 'studies', 'expertises', 'affiliations']) }">
+          <BDropdownItem :to="{ path: '/', hash: '#aboutMe' }" class="menu-item" :class="{ 'active-submenu': isActive(['aboutMe']) }">
+            {{ t('sectionAboutMe.aboutMe') }}
+          </BDropdownItem>
+          <BDropdownItem :to="{ path: '/', hash: '#studies' }" class="menu-item" :class="{ 'active-submenu': isActive(['studies']) }">
+            {{ t('sectionStudies.studies') }}
+          </BDropdownItem>
+          <BDropdownItem :to="{ path: '/', hash: '#expertises' }" class="menu-item" :class="{ 'active-submenu': isActive(['expertises']) }">
+            {{ t('sectionExpertises.expertises') }}
+          </BDropdownItem>
+          <BDropdownItem :to="{ path: '/', hash: '#affiliations' }" class="menu-item" :class="{ 'active-submenu': isActive(['affiliations']) }">
+            {{ t('sectionAffiliations.affiliations') }}
+          </BDropdownItem>
+        </BDropdown>
+
+        <BNavItem :to="{ name: 'Services' }" class="mx-2" :class="{ 'active-menu': isActive(['services']) }">
           {{ t('sectionServices.services') }}
         </BNavItem>
 <!--  Not used      -->
@@ -43,9 +46,10 @@
 <!--        <BNavItem :to="{ path: '/', hash: '#newsEvents' }" class="mx-2">-->
 <!--          {{ t('sectionNewsEvents.newsEvents') }}-->
 <!--        </BNavItem>-->
-        <BNavItem :to="{ path: '/', hash: '#contacts' }" class="mx-2">
+        <BNavItem :to="{ path: '/', hash: '#contacts' }" class="mx-2" :class="{ 'active-menu': isActive(['contacts']) }">
           {{ t('sectionContacts.contacts') }}
         </BNavItem>
+
       </BNavbarNav>
 
       <BNavbarNav class="ms-auto">
@@ -55,7 +59,6 @@
           </BButton>
         </BNavItem>
 
-<!--        <BDropdown :text="t('navBar.language.language')" variant="primary" class="mx-2">-->
         <BDropdown variant="primary" class="language-dropdown mx-2" menu-class="dropdown-transparent">
           <template #button-content>
             <img :src="currentFlag" alt="Language" class="flag-icon" />
@@ -64,11 +67,6 @@
           <BDropdownItem @click="changeLanguage('hu')"><img src="@/assets/flags/hu_flag.png" alt="Hungarian" class="flag-icon" /></BDropdownItem>
           <BDropdownItem @click="changeLanguage('ro')"><img src="@/assets/flags/ro_flag.png" alt="Romanian" class="flag-icon" /></BDropdownItem>
         </BDropdown>
-<!--        <BDropdown :text="t('navBar.language.language')" variant="primary" class="mx-2">-->
-<!--          <BDropdownItem @click="changeLanguage('en')">{{ t('navBar.language.english') }}</BDropdownItem>-->
-<!--          <BDropdownItem @click="changeLanguage('hu')">{{ t('navBar.language.hungarian') }}</BDropdownItem>-->
-<!--          <BDropdownItem @click="changeLanguage('ro')">{{ t('navBar.language.romanian') }}</BDropdownItem>-->
-<!--        </BDropdown>-->
       </BNavbarNav>
 
     </BCollapse>
@@ -121,12 +119,72 @@ export default defineComponent({
       }
     };
 
+    // const isActive = (paths: string[]) => {
+    //   const currentPath = router.currentRoute.value.path;
+    //   const currentHash = router.currentRoute.value.hash;
+    //
+    //   console.log("Current Path:", currentPath);
+    //   console.log("Current Hash:", currentHash);
+    //
+    //   if (paths.includes(currentPath)) {
+    //     return true;
+    //   }
+    //
+    //   if (currentHash) {
+    //     return paths.some(path => currentHash === `#${path.replace('/', '')}`);
+    //   }
+    //
+    //   return false;
+    // };
+    // const isActive = (paths: string[], checkParent = false) => {
+    //   const currentPath = router.currentRoute.value.path;
+    //   const currentHash = router.currentRoute.value.hash;
+    //
+    //   console.log("Current Path:", currentPath);
+    //   console.log("Current Hash:", currentHash);
+    //
+    //   // Ellenőrizzük, hogy az aktuális útvonal benne van-e a listában
+    //   const isPathActive = paths.includes(currentPath);
+    //
+    //   // Ellenőrizzük, hogy a hash alapján aktív-e valamelyik szekció
+    //   const isHashActive = currentHash
+    //       ? paths.some(path => currentHash === `#${path.replace('/', '')}`)
+    //       : false;
+    //
+    //   // Ha checkParent igaz, akkor almenü elemként az aktív főmenüpontot is visszaadjuk
+    //   if (checkParent) {
+    //     return isPathActive || isHashActive;
+    //   }
+    //
+    //   return isPathActive || isHashActive;
+    // };
+    const isActive = (paths: string[]) => {
+      const currentPath = router.currentRoute.value.path;
+      const currentHash = router.currentRoute.value.hash;
+      return paths.some(path => currentPath.includes(path) || currentHash.includes(path));
+    };
+
+    // const isParentActive = computed(() => {
+    //   return isActive(['/aboutMe', '/studies', '/expertises', '/affiliations']);
+    // });
+    const isParentActive = (paths: string[]) => {
+      const currentHash = router.currentRoute.value.hash;
+
+      console.log("paths: ", paths)
+      console.log("Current Hash: ", currentHash);
+      console.log("Verdict:", paths.some(path => currentHash.includes(path)));
+
+      return paths.some(path => currentHash.includes(path));
+    };
+
     return {
       currentFlag,
       changeLanguage,
       openCalendlyPopup,
       scrollToTop,
       t,
+      isActive,
+      isParentActive
     }
   },
 })
@@ -182,7 +240,6 @@ export default defineComponent({
     }
   }
 
-  /* ✅ A legördülő gomb háttere átlátszó */
   .language-dropdown .btn {
     background: transparent !important;
     border: none !important;
@@ -190,14 +247,12 @@ export default defineComponent({
     padding: 0;
   }
 
-  /* ✅ A legördülő menü háttere átlátszó */
   .dropdown-transparent {
     background: rgba(255, 255, 255, 0) !important;
     border: none !important;
     box-shadow: none !important;
   }
 
-  /* ✅ A legördülő tartalmát beállítjuk, hogy ne lógjon ki a képernyőről */
   .dropdown-menu {
     min-width: 48px !important;
     right: 0 !important;
@@ -205,12 +260,33 @@ export default defineComponent({
     overflow: hidden;
   }
 
-  /* ✅ Zászló ikon stílus */
   .flag-icon {
     width: 48px;
     height: 32px;
-    //margin-right: 8px;
-    //vertical-align: middle;
     horiz-align: right;
+  }
+
+  .menu-item {
+    color: black !important;
+    background-color: #f8f9fa !important;
+  }
+
+  .btn {
+    color: black !important;
+  }
+
+  .active-menu {
+    text-decoration: underline !important;
+    font-weight: bold !important;
+  }
+
+  .active-menu .dropdown-toggle {
+    text-decoration: underline !important;
+    font-weight: bold !important;
+  }
+
+  .active-submenu {
+    text-decoration: underline;
+    font-weight: bold;
   }
 </style>

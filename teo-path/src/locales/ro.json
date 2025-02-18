@@ -51,7 +51,8 @@
     "currStudText":  "Sunt în prezent studentă la Institutul Gamma din Iași, unde studiez terapia familială sistemică pentru a-mi aprofunda cunoștințele în sprijinirea familiilor și relațiilor."
   },
 
-  "sectionExpertise": {
+  "sectionExpertises": {
+    "expertises": "Expertiză Profesională",
     "professionalExpertise": "Expertiză Profesională",
     "profExp1": "Pasiunea mea pentru înțelegerea comportamentului uman și sprijinirea indivizilor m-a determinat să urmez studii aprofundate în psihologie, concentrându-mă pe consiliere și intervenții.",
     "profExp2": "Expertiza mea profesională îmbină psihologia și îngrijirea, având o abordare holistică asupra sănătății mentale și fizice. Sunt specializat(ă) în:",
@@ -60,6 +61,7 @@
   },
 
   "sectionAffiliations": {
+    "affiliations": "Afiliere profesională",
     "professionalAffiliations": "Afiliere profesională",
     "profAff1": "British Psychological Society (BPS) – Membru Graduate (2024)",
     "profAff2": "Faculty for Children, Young People, and their Families (CYPF) – Membru asociat",

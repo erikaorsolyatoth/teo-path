@@ -51,7 +51,8 @@
     "currStudText":  "Jelenleg a Gamma Intézet hallgatója vagyok Iași-ban, ahol szisztematikus családterápiát tanulok, hogy tovább bővítsem ismereteimet a családi rendszerek támogatásában."
   },
 
-  "sectionExpertise": {
+  "sectionExpertises": {
+    "expertises": "Szakterületeim",
     "professionalExpertise": "Szakterületeim",
     "profExp1": "Az emberi viselkedés megértése és az egyének támogatása iránti szenvedélyem arra ösztönzött, hogy átfogó tanulmányokat folytassak a pszichológia területén, különös tekintettel a tanácsadásra és az intervenciókra.",
     "profExp2": "Szakmai tudásom hidat képez a pszichológia és a gondoskodás között, holisztikus megközelítést alkalmazva a mentális és fizikai egészség területén. Szakterületeim a következők:",
@@ -60,6 +61,7 @@
   },
 
   "sectionAffiliations": {
+    "affiliations": "Szakmai tagságok",
     "professionalAffiliations": "Szakmai tagságok",
     "profAff1": "Brit Pszichológiai Társaság (BPS) – Végzett Tag (2024)",
     "profAff2": "Gyermekekkel, fiatalokkal és családjaikkal foglalkozó kar (CYPF) – Társult Tag",
