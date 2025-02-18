@@ -3,17 +3,16 @@ import { defineComponent, computed, ref, onMounted, onUnmounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import TeoPathNavBar from "@/components/TeoPathNavBar.vue";
-import AboutMeView from "@/views/about/AboutMeView.vue";
-import ExperiencesView from "@/views/about/ExperiencesView.vue";
-import StudiesView from "@/views/about/StudiesView.vue";
-// Not used for the time being
-// import IssuesView from "@/views/IssuesView.vue";
-// Not used for the time being
-// import NewsEventsView from "@/views/NewsEventsView.vue";
-import ContactsView from "@/views/ContactsView.vue";
 import ScrollToTopArrow from "@/components/ScrollToTopArrow.vue";
 import WhatsAppIcon from "@/components/WhatsAppIcon.vue";
 import ServicesCarousel from "@/components/ServicesCarousel.vue";
+import AboutMeView from "@/views/about/AboutMeView.vue";
+import StudiesView from "@/views/about/StudiesView.vue";
+import ExpertisesView from "@/views/about/ExpertisesView.vue";
+import AffiliationsView from "@/views/about/AffiliationsView.vue";
+// Not used for the time being
+// import NewsEventsView from "@/views/NewsEventsView.vue";
+import ContactsView from "@/views/ContactsView.vue";
 
 export default defineComponent({
   setup() {
@@ -48,16 +47,15 @@ export default defineComponent({
   components: {
     TeoPathNavBar,
     ServicesCarousel,
-    ContactsView,
-    // Not used for the time being
-    // NewsEventsView,
-    // Not used for the time being
-    // IssuesView,
-    StudiesView,
-    ExperiencesView,
-    AboutMeView,
     ScrollToTopArrow,
     WhatsAppIcon,
+    AboutMeView,
+    StudiesView,
+    ExpertisesView,
+    AffiliationsView,
+    // Not used for the time being
+    // NewsEventsView,
+    ContactsView,
   }
 });
 
@@ -79,13 +77,12 @@ export default defineComponent({
     <section id="studies">
       <StudiesView/>
     </section>
-    <section id="experiences">
-      <ExperiencesView/>
+    <section id="expertises">
+      <ExpertisesView/>
     </section>
-<!--  Not used for the time being     -->
-<!--    <section id="issues">-->
-<!--      <IssuesView/>-->
-<!--    </section>-->
+    <section id="affiliations">
+      <AffiliationsView/>
+    </section>
 <!--  Not used for the time being     -->
 <!--    <section id="newsEvents">-->
 <!--      <NewsEventsView/>-->

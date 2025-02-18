@@ -74,18 +74,11 @@ export default defineComponent({
       },
       {
         backgroundImg: require("@/assets/header-picture-background.png"),
-        slideImg: require("@/assets/header-picture-logo.png"),
+        slideImg: require("@/assets/profile-transparent.png"),
         caption: t("carousel.slide2.caption"),
         text: t("carousel.slide2.text"),
         buttonText: t("carousel.slide2.buttonText"),
-      },
-      {
-        backgroundImg: require("@/assets/header-picture-background.png"),
-        slideImg: require("@/assets/header-picture-logo.png"),
-        caption: t("carousel.slide3.caption"),
-        text: t("carousel.slide3.text"),
-        buttonText: t("carousel.slide3.buttonText"),
-      },
+      }
     ];
 
     onBeforeMount(() => {
@@ -135,7 +128,7 @@ export default defineComponent({
   margin-top: 10px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #ffcc00;
+  background-color: #FFD700;
   color: #000;
   border: none;
   border-radius: 5px;
@@ -144,7 +137,7 @@ export default defineComponent({
 }
 
 .carousel-button:hover {
-  background-color: #ffaa00;
+  background-color: #DAA520;
 }
 
 .slide-image {
