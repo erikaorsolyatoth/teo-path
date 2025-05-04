@@ -9,17 +9,11 @@
         <h6>{{ $t('sectionStudies.university') }}</h6>
         <h5>{{ $t('sectionStudies.mainSubjects') }}</h5>
         <h6>{{ $t('sectionStudies.bachelorsMainSubjects') }}</h6>
-        <h5>{{ $t('sectionStudies.thesis') }}</h5>
-        <h6>{{ $t('sectionStudies.thesisTitle') }}</h6>
         <hr/>
       </div>
       <div class="column second">
         <h4>{{ $t('sectionStudies.mastersDegree') }}</h4>
         <h6>{{ $t('sectionStudies.mastersDegreeText') }}</h6>
-        <h5>{{ $t('sectionStudies.mainSubjects') }}</h5>
-        <h6>{{ $t('sectionStudies.mastersMainSubjects') }}</h6>
-        <h5>{{ $t('sectionStudies.dissertation') }}</h5>
-        <h6>{{ $t('sectionStudies.dissertationTitle') }}</h6>
         <hr/>
       </div>
     </div>
@@ -39,15 +33,9 @@
         <h6>{{ $t('sectionStudies.university') }}</h6>
         <h5>{{ $t('sectionStudies.mainSubjects') }}</h5>
         <h6>{{ $t('sectionStudies.bachelorsMainSubjects') }}</h6>
-        <h5>{{ $t('sectionStudies.thesis') }}</h5>
-        <h6>{{ $t('sectionStudies.thesisTitle') }}</h6>
         <hr/>
         <h4>{{ $t('sectionStudies.mastersDegree') }}</h4>
         <h6>{{ $t('sectionStudies.mastersDegreeText') }}</h6>
-        <h5>{{ $t('sectionStudies.mainSubjects') }}</h5>
-        <h6>{{ $t('sectionStudies.mastersMainSubjects') }}</h6>
-        <h5>{{ $t('sectionStudies.dissertation') }}</h5>
-        <h6>{{ $t('sectionStudies.dissertationTitle') }}</h6>
         <hr/>
         <h5>{{ $t('sectionStudies.additionalTrainings') }}</h5>
         <h6>{{ $t('sectionStudies.addTrain1') }}</h6>
