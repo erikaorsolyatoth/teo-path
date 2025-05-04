@@ -23,7 +23,6 @@
       </div>
     </div>
   </div>
-  <LogoImageBackground/>
 </template>
 
 <script setup lang="ts">

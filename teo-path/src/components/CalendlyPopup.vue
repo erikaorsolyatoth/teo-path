@@ -1,7 +1,7 @@
 <template>
   <div>
     <button @click="openCalendlyPopup" class="calendly-button">
-      {{ $t('book') }}
+      {{ $t('calendly.book') }}
     </button>
   </div>
 </template>
