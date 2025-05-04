@@ -1,14 +1,17 @@
 {
   "logoText": "TeoPath – Az élet minden szakaszában veled.",
   "navBar": {
-    "calendlyLink": "https://calendly.com/era-teopath/30min",
+    "calendlyLink": "https://calendly.com/era-teopath/15-min-hu",
     "language": {
       "language": "Nyelv",
       "english": "Angol",
       "hungarian": "Magyar",
       "romanian": "Román"
-    },
-    "booking": "Időpontfoglalás"
+    }
+  },
+
+  "calendly": {
+    "book": "Időpontfoglalás"
   },
 
   "carousel": {

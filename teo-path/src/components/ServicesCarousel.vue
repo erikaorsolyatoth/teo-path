@@ -1,3 +1,61 @@
+<script lang="ts">
+import {computed, defineComponent, onBeforeMount, ref, watch} from "vue";
+import TeoPathNavBar from "@/components/TeoPathNavBar.vue";
+import {useI18n} from "vue-i18n";
+import CalendlyPopup from "@/components/CalendlyPopup.vue";
+
+export default defineComponent({
+  name: "ServicesCarousel",
+  components: {CalendlyPopup, TeoPathNavBar},
+  setup() {
+    const { t, locale } = useI18n();
+    const activeSlide = ref(0);
+
+    const slides = ref<Array<{
+      backgroundImg: string;
+      slideImg: string;
+      caption: string;
+      text: string;
+      buttonText: string;
+    }>>([]);
+
+    const getSlides = () => [
+      {
+        backgroundImg: require("@/assets/header-picture-background.png"),
+        slideImg: require("@/assets/logo-image-background.jpg"),
+        caption: t("carousel.slide1.caption"),
+        text: t("carousel.slide1.text"),
+        buttonText: t("carousel.slide1.buttonText"),
+      },
+      {
+        backgroundImg: require("@/assets/header-picture-background.png"),
+        slideImg: require("@/assets/header-picture-logo.png"),
+        // slideImg: require("@/assets/profile-transparent.png"),
+        caption: t("carousel.slide2.caption"),
+        text: t("carousel.slide2.text"),
+        buttonText: t("carousel.slide2.buttonText"),
+      }
+    ];
+
+    onBeforeMount(() => {
+      slides.value = getSlides();
+    });
+
+    watch(locale, () => {
+      slides.value = getSlides();
+    });
+
+    return { slides, activeSlide };
+  },
+  props: {
+    scrolledPastCarousel: {
+      type: Boolean,
+      required: true
+    }
+  },
+});
+</script>
+
 <template>
   <div class="navbar-overlay">
     <TeoPathNavBar :scrolledPastCarousel="scrolledPastCarousel"/>
@@ -26,7 +84,7 @@
             <div>
               <h3>{{ slide.caption }}</h3>
               <p>{{ slide.text }}</p>
-              <button class="carousel-button">{{ slide.buttonText }}</button>
+              <CalendlyPopup />
             </div>
           </div>
         </div>
@@ -37,68 +95,13 @@
         <div class="slide-content-mobile">
           <h3>{{ slide.caption }}</h3>
           <p>{{ slide.text }}</p>
-          <button class="carousel-button">{{ slide.buttonText }}</button>
+          <CalendlyPopup />
+<!--          <button class="carousel-button" @click="openCalendlyPopup">{{ slide.buttonText }}</button>-->
         </div>
       </div>
     </b-carousel-slide>
   </b-carousel>
 </template>
-
-<script lang="ts">
-import {defineComponent, onBeforeMount, ref, watch} from "vue";
-import TeoPathNavBar from "@/components/TeoPathNavBar.vue";
-import {useI18n} from "vue-i18n";
-
-export default defineComponent({
-  name: "ServicesCarousel",
-  components: {TeoPathNavBar},
-  setup() {
-    const { t, locale } = useI18n();
-    const activeSlide = ref(0);
-
-    const slides = ref<Array<{
-      backgroundImg: string;
-      slideImg: string;
-      caption: string;
-      text: string;
-      buttonText: string;
-    }>>([]);
-
-    const getSlides = () => [
-      {
-        backgroundImg: require("@/assets/header-picture-background.png"),
-        slideImg: require("@/assets/header-picture-logo.png"),
-        caption: t("carousel.slide1.caption"),
-        text: t("carousel.slide1.text"),
-        buttonText: t("carousel.slide1.buttonText"),
-      },
-      {
-        backgroundImg: require("@/assets/header-picture-background.png"),
-        slideImg: require("@/assets/profile-transparent.png"),
-        caption: t("carousel.slide2.caption"),
-        text: t("carousel.slide2.text"),
-        buttonText: t("carousel.slide2.buttonText"),
-      }
-    ];
-
-    onBeforeMount(() => {
-      slides.value = getSlides();
-    });
-
-    watch(locale, () => {
-      slides.value = getSlides();
-    });
-
-    return { slides, activeSlide };
-  },
-  props: {
-    scrolledPastCarousel: {
-      type: Boolean,
-      required: true
-    }
-  },
-});
-</script>
 
 <style scoped>
 #carousel {
