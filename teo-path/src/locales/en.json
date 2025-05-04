@@ -1,14 +1,17 @@
 {
   "logoText": "TeoPath – With you through every stage of life.",
   "navBar": {
-    "calendlyLink": "https://calendly.com/era-teopath/30min",
+    "calendlyLink": "https://calendly.com/era-teopath/15-min-en",
     "language": {
       "language": "Language",
       "english": "English",
       "hungarian": "Hungarian",
       "romanian": "Romanian"
-    },
-    "booking": "Book an appointment"
+    }
+  },
+
+  "calendly": {
+    "book": "Book an appointment"
   },
 
   "carousel": {

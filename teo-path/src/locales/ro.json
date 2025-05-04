@@ -1,14 +1,17 @@
 {
   "logoText": "TeoPath – Alături de tine în fiecare etapă a vieții.",
   "navBar": {
-    "calendlyLink": "https://calendly.com/era-teopath/30min",
+    "calendlyLink": "https://calendly.com/era-teopath/15-min-ro",
     "language": {
       "language": "Limbă",
       "english": "Engleză",
       "hungarian": "Maghiară",
       "romanian": "Romanesc"
-    },
-    "booking": "Programează o întâlnire"
+    }
+  },
+
+  "calendly": {
+    "book": "Programează o întâlnire"
   },
 
   "carousel": {

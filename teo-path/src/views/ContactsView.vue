@@ -1,4 +1,9 @@
 <template>
+  <div>
+<!--    <b-img :src="require('/src/assets/header-picture-background.png')" fluid-grow alt="People in a seating image"></b-img>-->
+    <b-img :src="require('/src/assets/header-picture-logo.png')" fluid-grow alt="People in a seating image"></b-img>
+  </div>
+
   <div class="section-padding" style="flex: min-content">
     <h2>{{ $t('sectionContacts.contactsTitle') }}</h2>
     <h5>{{ $t('sectionContacts.contactsDescription') }}</h5>

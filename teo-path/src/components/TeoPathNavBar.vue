@@ -55,9 +55,7 @@
 
       <BNavbarNav class="ms-auto">
         <BNavItem>
-          <BButton variant="light" class="mx-2" @click="openCalendlyPopup">
-            {{ t('navBar.booking') }}
-          </BButton>
+          <CalendlyPopup />
         </BNavItem>
 
         <BDropdown variant="primary" class="language-dropdown mx-2" menu-class="dropdown-transparent">
@@ -78,8 +76,10 @@
 import {computed, defineComponent, onMounted, onUnmounted, ref} from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from "vue-router";
+import CalendlyPopup from "@/components/CalendlyPopup.vue";
 
 export default defineComponent({
+  components: {CalendlyPopup},
   props: {
     scrolledPastCarousel: {
       type: Boolean,
@@ -99,11 +99,6 @@ export default defineComponent({
 
     function changeLanguage(lang: string) {
       locale.value = lang
-    }
-
-    function openCalendlyPopup() {
-      console.log('Opening Calendly popup...');
-      window.Calendly.initPopupWidget({ url: t('navBar.calendlyLink') })
     }
 
     const router = useRouter(); // Itt elérjük a Vue Routert
@@ -149,7 +144,6 @@ export default defineComponent({
     return {
       currentFlag,
       changeLanguage,
-      openCalendlyPopup,
       scrollToTop,
       t,
       isActive,
